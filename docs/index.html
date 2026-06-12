@@ -1227,6 +1227,65 @@
     border-radius:26px;
   }
 }    
+
+.faq-section{
+  background:#f8fafc;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.faq-item{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:18px 20px;
+  box-shadow:0 10px 26px rgba(16,24,40,.05);
+}
+
+.faq-item summary{
+  cursor:pointer;
+  font-weight:900;
+  color:var(--swf-dark);
+  list-style:none;
+  position:relative;
+  padding-right:28px;
+}
+
+.faq-item summary::-webkit-details-marker{
+  display:none;
+}
+
+.faq-item summary:after{
+  content:"+";
+  position:absolute;
+  right:0;
+  top:0;
+  color:var(--swf-red);
+  font-size:22px;
+  line-height:1;
+}
+
+.faq-item[open] summary:after{
+  content:"−";
+}
+
+.faq-item p{
+  margin:12px 0 0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+@media(max-width:760px){
+  .faq-grid{
+    grid-template-columns:1fr;
+  }
+}    
     .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
     section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em} .section-head p{margin:0;color:var(--muted);max-width:530px}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 28px rgba(16,24,40,.06);display:flex;flex-direction:column}.pic{height:230px;background:#fff;display:flex;align-items:center;justify-content:center;padding:18px;border-bottom:1px solid var(--line)}.pic img{max-height:100%;object-fit:contain}.card-body{padding:20px;display:flex;flex-direction:column;gap:13px;flex:1}.tag{align-self:flex-start;background:#fff5f5;color:#b91c1c;border:1px solid #fecdd3;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.card h3{font-size:22px;margin:0;letter-spacing:-.02em}.card p{margin:0;color:var(--muted);font-size:14px}.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.spec{background:var(--soft);border-radius:12px;padding:10px;font-size:12px}.spec b{display:block;font-size:14px;color:var(--ink)}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:auto}.card-actions .btn{padding:11px 12px;font-size:12px}
@@ -1807,6 +1866,66 @@
           <p>Discuss machine interest, freight, financing, training, and possible trade-in value together.</p>
         </div>
       </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <div class="kicker">SWF Buying Questions</div>
+        <h2>Frequently asked questions.</h2>
+      </div>
+      <p>
+        Not sure where to start? These are the common questions buyers ask when comparing SWF embroidery machines.
+      </p>
+    </div>
+
+    <div class="faq-grid">
+
+      <details class="faq-item" open>
+        <summary>How much does an SWF embroidery machine cost?</summary>
+        <p>Pricing depends on the model, machine configuration, freight, installation, training, and any financing needs. Request pricing and BYLD Equipment can help build a quote around your shop.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which SWF machine is best for a startup?</summary>
+        <p>Many first-time buyers compare compact and single-head SWF options. The right fit depends on your space, budget, products, expected order volume, and growth plans.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can SWF embroidery machines sew hats?</summary>
+        <p>Yes. SWF machines are commonly used for caps, flats, garments, bags, polos, jackets, and other decorated apparel applications.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the difference between single-head, dual-head, and multi-head machines?</summary>
+        <p>Single-head machines are usually best for custom work and smaller batches. Dual-head machines increase output while staying flexible. Multi-head machines are built for larger production runs and higher-volume shops.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I finance an SWF embroidery machine?</summary>
+        <p>Qualified buyers may be able to finance SWF equipment through BYLD Finance. Financing options vary by applicant, credit profile, equipment, and lender approval.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can freight, installation, and training be included?</summary>
+        <p>Depending on the quote and financing structure, freight, installation, training, and startup needs can be discussed as part of the overall buying plan.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I trade in my current embroidery machine?</summary>
+        <p>If you already own embroidery equipment, BYLD Equipment can talk through possible upgrade paths and trade-in considerations.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I know which SWF model to choose?</summary>
+        <p>The easiest next step is to request pricing and tell us what you plan to make, how much volume you expect, and whether you need financing, freight, installation, or training included.</p>
+      </details>
+
     </div>
 
   </div>
