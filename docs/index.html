@@ -48,8 +48,32 @@
     linear-gradient(180deg,#fff 0%,#f6f7fb 100%);
 }
 
+.hero-v2{
+  background:#fff;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+
+.hero-v2:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(16,24,40,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,24,40,.035) 1px, transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom, rgba(0,0,0,.55), transparent 72%);
+  pointer-events:none;
+}
+
 .hero-grid-v2{
+  position:relative;
+  z-index:2;
+  display:grid;
   grid-template-columns:1fr 1.05fr;
+  gap:46px;
+  align-items:center;
   padding:88px 0 74px;
 }
 
@@ -97,20 +121,23 @@
   overflow:hidden;
 }
 
-.hero-machine-card:before{
-  content:"SWF";
+.hero-watermark{
   position:absolute;
-  right:18px;
+  right:20px;
   top:18px;
-  font-size:92px;
-  font-weight:900;
-  color:rgba(227,27,35,.055);
-  line-height:1;
+  opacity:.055;
+  pointer-events:none;
+  z-index:1;
+}
+
+.hero-watermark img{
+  width:190px;
+  height:auto;
 }
 
 .hero-machine-top{
   position:relative;
-  z-index:2;
+  z-index:3;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -136,7 +163,7 @@
   color:var(--swf-dark);
 }
 
-.hero-machine-card img{
+.hero-machine-img{
   position:relative;
   z-index:2;
   width:100%;
@@ -147,7 +174,7 @@
 
 .hero-machine-bottom{
   position:relative;
-  z-index:2;
+  z-index:3;
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:12px;
@@ -164,6 +191,7 @@
 .hero-machine-bottom b{
   display:block;
   font-size:13px;
+  color:var(--ink);
 }
 
 .hero-machine-bottom span{
@@ -185,10 +213,17 @@
 }
 
 @media(max-width:640px){
-  .hero-machine-top,
+  .hero-machine-top{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
   .hero-machine-bottom{
     grid-template-columns:1fr;
-    display:grid;
+  }
+
+  .hero-watermark img{
+    width:145px;
   }
 }
     .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
@@ -220,12 +255,16 @@
 
   <main id="top">
     
-   <section class="hero hero-v2">
+  <section class="hero hero-v2">
   <div class="wrap hero-grid hero-grid-v2">
     <div class="hero-copy">
       <div class="eyebrow">Authorized Sales, Financing &amp; Support</div>
+
       <h1>Find the right <span>SWF embroidery machine</span> for your shop.</h1>
-      <p class="lead">Compare SWF single-head, compact, dual-head, and multi-head embroidery machines with guidance from BYLD Equipment. Get pricing, freight estimates, financing options, and setup support before you buy.</p>
+
+      <p class="lead">
+        Compare SWF single-head, compact, dual-head, and multi-head embroidery machines with guidance from BYLD Equipment. Get pricing, freight estimates, financing options, and setup support before you buy.
+      </p>
 
       <div class="hero-actions">
         <a class="btn btn-red" href="#lead">Request SWF Pricing</a>
@@ -233,21 +272,42 @@
       </div>
 
       <div class="hero-proof">
-        <div><b>No public pricing</b><span>Get a quote built around your machine, freight, install, and training needs.</span></div>
-        <div><b>Financing available</b><span>Explore payment options through BYLD Finance before or after choosing a model.</span></div>
-        <div><b>Built for real shops</b><span>From first machines to production expansion, we help match the right setup.</span></div>
+        <div>
+          <b>Tailored Recommendations</b>
+          <span>Get a quote built around your machine, freight, install, and training needs.</span>
+        </div>
+        <div>
+          <b>Financing Available</b>
+          <span>Explore payment options through BYLD Finance before or after choosing a model.</span>
+        </div>
+        <div>
+          <b>Built for Real Shops</b>
+          <span>From first machines to production expansion, we help match the right setup.</span>
+        </div>
       </div>
     </div>
 
     <div class="hero-machine-card">
+      <div class="hero-watermark">
+        <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/swfnobg_1.png?v=1781197569" alt="SWF logo">
+      </div>
+
       <div class="hero-machine-top">
         <span>Featured SWF Machine</span>
         <strong>KX Series Multi-Head</strong>
       </div>
-      <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX 6 head embroidery machine">
+
+      <img class="hero-machine-img" src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX 6 head embroidery machine">
+
       <div class="hero-machine-bottom">
-        <div><b>Production focused</b><span>For growing embroidery shops</span></div>
-        <div><b>Quote ready</b><span>Pricing, freight, install, and financing</span></div>
+        <div>
+          <b>Production Focused</b>
+          <span>For growing embroidery shops</span>
+        </div>
+        <div>
+          <b>Quote Ready</b>
+          <span>Pricing, freight, install, and financing</span>
+        </div>
       </div>
     </div>
   </div>
