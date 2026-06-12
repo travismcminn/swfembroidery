@@ -41,6 +41,156 @@
     h1{font-size:clamp(40px,5.4vw,72px);line-height:.98;margin:18px 0 16px;letter-spacing:-.055em;color:var(--swf-dark)}
     h1 span{color:var(--swf-red)}.lead{font-size:clamp(17px,1.7vw,21px);color:#475467;max-width:680px;margin:0 0 24px}
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.trust div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;font-size:13px;font-weight:800;box-shadow:0 8px 22px rgba(16,24,40,.05)}
+    .hero-v2{
+  background:
+    radial-gradient(circle at 15% 8%,rgba(227,27,35,.16),transparent 34%),
+    radial-gradient(circle at 90% 18%,rgba(68,159,80,.12),transparent 30%),
+    linear-gradient(180deg,#fff 0%,#f6f7fb 100%);
+}
+
+.hero-grid-v2{
+  grid-template-columns:1fr 1.05fr;
+  padding:88px 0 74px;
+}
+
+.hero-copy{
+  position:relative;
+  z-index:2;
+}
+
+.hero-proof{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:28px;
+}
+
+.hero-proof div{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:15px;
+  box-shadow:0 10px 26px rgba(16,24,40,.06);
+}
+
+.hero-proof b{
+  display:block;
+  font-size:13px;
+  margin-bottom:5px;
+  color:var(--swf-dark);
+}
+
+.hero-proof span{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.hero-machine-card{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:34px;
+  padding:24px;
+  box-shadow:0 24px 70px rgba(16,24,40,.14);
+  overflow:hidden;
+}
+
+.hero-machine-card:before{
+  content:"SWF";
+  position:absolute;
+  right:18px;
+  top:18px;
+  font-size:92px;
+  font-weight:900;
+  color:rgba(227,27,35,.055);
+  line-height:1;
+}
+
+.hero-machine-top{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  margin-bottom:14px;
+}
+
+.hero-machine-top span{
+  display:inline-flex;
+  background:#fff5f5;
+  color:#b91c1c;
+  border:1px solid #fecdd3;
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:11px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+
+.hero-machine-top strong{
+  font-size:14px;
+  color:var(--swf-dark);
+}
+
+.hero-machine-card img{
+  position:relative;
+  z-index:2;
+  width:100%;
+  max-height:460px;
+  object-fit:contain;
+  margin:0 auto;
+}
+
+.hero-machine-bottom{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:18px;
+}
+
+.hero-machine-bottom div{
+  background:var(--soft);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:13px;
+}
+
+.hero-machine-bottom b{
+  display:block;
+  font-size:13px;
+}
+
+.hero-machine-bottom span{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  margin-top:3px;
+}
+
+@media(max-width:960px){
+  .hero-grid-v2{
+    grid-template-columns:1fr;
+    padding:58px 0;
+  }
+
+  .hero-proof{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .hero-machine-top,
+  .hero-machine-bottom{
+    grid-template-columns:1fr;
+    display:grid;
+  }
+}
     .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
     section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em} .section-head p{margin:0;color:var(--muted);max-width:530px}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 28px rgba(16,24,40,.06);display:flex;flex-direction:column}.pic{height:230px;background:#fff;display:flex;align-items:center;justify-content:center;padding:18px;border-bottom:1px solid var(--line)}.pic img{max-height:100%;object-fit:contain}.card-body{padding:20px;display:flex;flex-direction:column;gap:13px;flex:1}.tag{align-self:flex-start;background:#fff5f5;color:#b91c1c;border:1px solid #fecdd3;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.card h3{font-size:22px;margin:0;letter-spacing:-.02em}.card p{margin:0;color:var(--muted);font-size:14px}.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.spec{background:var(--soft);border-radius:12px;padding:10px;font-size:12px}.spec b{display:block;font-size:14px;color:var(--ink)}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:auto}.card-actions .btn{padding:11px 12px;font-size:12px}
@@ -69,28 +219,39 @@
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">SWF machine leads for BYLD Equipment</div>
-          <h1>Find the right <span>SWF embroidery machine</span> for your shop.</h1>
-          <p class="lead">Compare single-head, dual-head, compact, and multi-head SWF embroidery machines, then get pricing, freight, financing, and setup help from BYLD Equipment.</p>
-          <div class="hero-actions">
-            <a class="btn btn-red" href="#lead">Get SWF Pricing</a>
-            <a class="btn btn-green" href="https://byldfinance.com/pages/apply-now" target="_blank" rel="noopener">Get Pre-Approved</a>
-            <a class="btn btn-light" href="#machines">Compare Models</a>
-          </div>
-          <div class="trust">
-            <div>New SWF machines</div>
-            <div>Financing available</div>
-            <div>Install and training help</div>
-          </div>
-        </div>
-        <div class="machine-stage">
-          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/kx_series.png?v=1759259733" alt="SWF KX embroidery machine">
-        </div>
+    
+   <section class="hero hero-v2">
+  <div class="wrap hero-grid hero-grid-v2">
+    <div class="hero-copy">
+      <div class="eyebrow">Authorized Sales, Financing &amp; Support</div>
+      <h1>Find the right <span>SWF embroidery machine</span> for your shop.</h1>
+      <p class="lead">Compare SWF single-head, compact, dual-head, and multi-head embroidery machines with guidance from BYLD Equipment. Get pricing, freight estimates, financing options, and setup support before you buy.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-red" href="#lead">Request SWF Pricing</a>
+        <a class="btn btn-light" href="#machines">Compare Machines</a>
       </div>
-    </section>
+
+      <div class="hero-proof">
+        <div><b>No public pricing</b><span>Get a quote built around your machine, freight, install, and training needs.</span></div>
+        <div><b>Financing available</b><span>Explore payment options through BYLD Finance before or after choosing a model.</span></div>
+        <div><b>Built for real shops</b><span>From first machines to production expansion, we help match the right setup.</span></div>
+      </div>
+    </div>
+
+    <div class="hero-machine-card">
+      <div class="hero-machine-top">
+        <span>Featured SWF Machine</span>
+        <strong>KX Series Multi-Head</strong>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX 6 head embroidery machine">
+      <div class="hero-machine-bottom">
+        <div><b>Production focused</b><span>For growing embroidery shops</span></div>
+        <div><b>Quote ready</b><span>Pricing, freight, install, and financing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="machines">
       <div class="wrap">
