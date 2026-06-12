@@ -554,6 +554,157 @@
   font-size:12px;
 }
 
+.why-swf{
+  background:#fff;
+}
+
+.swf-feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.swf-feature-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:24px;
+  box-shadow:0 12px 34px rgba(16,24,40,.06);
+}
+
+.swf-feature-large{
+  grid-column:span 3;
+  background:#101828;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+
+.swf-feature-large:before{
+  content:"";
+  position:absolute;
+  inset:20px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:22px;
+}
+
+.swf-feature-label{
+  display:inline-flex;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  padding:8px 12px;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+  position:relative;
+  z-index:2;
+}
+
+.swf-feature-large h3{
+  position:relative;
+  z-index:2;
+  margin:0 0 14px;
+  font-size:38px;
+  line-height:1.05;
+  letter-spacing:-.04em;
+  max-width:700px;
+}
+
+.swf-feature-large p{
+  position:relative;
+  z-index:2;
+  margin:0;
+  color:#d0d5dd;
+  max-width:700px;
+}
+
+.swf-stats{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:28px;
+}
+
+.swf-stats div{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:16px;
+}
+
+.swf-stats strong{
+  display:block;
+  font-size:16px;
+  margin-bottom:4px;
+}
+
+.swf-stats span{
+  color:#d0d5dd;
+  font-size:13px;
+}
+
+.swf-icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:#fff5f5;
+  border:1px solid #fecdd3;
+  color:var(--swf-red);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:16px;
+}
+
+.swf-feature-card h3{
+  margin:0 0 8px;
+  font-size:22px;
+  letter-spacing:-.03em;
+}
+
+.swf-feature-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+@media(max-width:960px){
+
+  .swf-feature-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .swf-feature-large{
+    grid-column:span 2;
+  }
+
+  .swf-stats{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+
+  .swf-feature-grid{
+    grid-template-columns:1fr;
+  }
+
+  .swf-feature-large{
+    grid-column:span 1;
+  }
+
+  .swf-feature-large h3{
+    font-size:30px;
+  }
+}    
+
 .why-byld{
   background:#f8fafc;
   border-top:1px solid var(--line);
@@ -984,6 +1135,99 @@
     </div>
   </div>
 </section>
+
+<section id="why-swf" class="why-swf">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <div class="kicker">Why SWF</div>
+        <h2>Why embroiderers choose SWF.</h2>
+      </div>
+      <p>
+        From startup shops to high-volume production facilities, SWF has built a reputation for reliable performance, excellent sew quality, and long-term value.
+      </p>
+    </div>
+
+    <div class="swf-feature-grid">
+
+      <div class="swf-feature-card swf-feature-large">
+        <div class="swf-feature-label">Trusted Worldwide</div>
+        <h3>Built for businesses that depend on embroidery every day.</h3>
+        <p>
+          SWF machines are used by apparel decorators, contract embroidery operations, schools, promotional product companies, and production facilities around the world. Their reputation has been built over decades of real-world use.
+        </p>
+
+        <div class="swf-stats">
+          <div>
+            <strong>Single Head</strong>
+            <span>Startup & custom shops</span>
+          </div>
+
+          <div>
+            <strong>Dual Head</strong>
+            <span>Growing production</span>
+          </div>
+
+          <div>
+            <strong>Multi-Head</strong>
+            <span>Commercial embroidery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="swf-feature-card">
+        <div class="swf-icon">01</div>
+        <h3>Excellent Cap Sewing</h3>
+        <p>
+          SWF machines are known for strong cap performance, making them a popular choice for shops producing structured hats and headwear.
+        </p>
+      </div>
+
+      <div class="swf-feature-card">
+        <div class="swf-icon">02</div>
+        <h3>Scalable Product Line</h3>
+        <p>
+          Start with a compact or single-head machine and grow into dual-head or multi-head production without changing brands.
+        </p>
+      </div>
+
+      <div class="swf-feature-card">
+        <div class="swf-icon">03</div>
+        <h3>Built For Production</h3>
+        <p>
+          SWF machines are designed for daily operation and consistent output across a wide range of embroidery applications.
+        </p>
+      </div>
+
+      <div class="swf-feature-card">
+        <div class="swf-icon">04</div>
+        <h3>Strong Value</h3>
+        <p>
+          Many buyers choose SWF because of the balance between performance, reliability, features, and long-term ownership cost.
+        </p>
+      </div>
+
+      <div class="swf-feature-card">
+        <div class="swf-icon">05</div>
+        <h3>Support & Parts Availability</h3>
+        <p>
+          With established support networks and readily available consumables and replacement parts, owners can keep machines running with confidence.
+        </p>
+      </div>
+
+      <div class="swf-feature-card">
+        <div class="swf-icon">06</div>
+        <h3>Proven Technology</h3>
+        <p>
+          SWF has spent decades refining embroidery machine technology used by thousands of shops worldwide.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>    
 
   <section id="why" class="why-byld">
   <div class="wrap">
