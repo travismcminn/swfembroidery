@@ -1013,6 +1013,123 @@
     font-size:30px;
   }
 
+}
+
+.finance-section{
+  background:#f8fafc;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.finance-layout{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:28px;
+  align-items:center;
+}
+
+.finance-copy{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:32px;
+  box-shadow:0 12px 34px rgba(16,24,40,.06);
+}
+
+.finance-copy h2{
+  margin-bottom:14px;
+}
+
+.finance-copy p{
+  color:var(--muted);
+  margin:0;
+}
+
+.finance-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:24px 0 16px;
+}
+
+.finance-disclaimer{
+  font-size:12px;
+  line-height:1.45;
+}
+
+.finance-card-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.finance-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:24px;
+  box-shadow:0 12px 34px rgba(16,24,40,.06);
+}
+
+.finance-card span{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:#ecfdf3;
+  border:1px solid #bbf7d0;
+  color:var(--byld-green);
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:16px;
+}
+
+.finance-card h3{
+  margin:0 0 8px;
+  font-size:22px;
+  letter-spacing:-.03em;
+}
+
+.finance-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.finance-card-dark{
+  background:#111827;
+  color:#fff;
+}
+
+.finance-card-dark img{
+  max-width:220px;
+  margin-bottom:20px;
+  background:#fff;
+  border-radius:14px;
+  padding:12px;
+}
+
+.finance-card-dark p{
+  color:#d0d5dd;
+  margin-bottom:18px;
+}
+
+@media(max-width:960px){
+  .finance-layout{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .finance-card-grid{
+    grid-template-columns:1fr;
+  }
+
+  .finance-copy{
+    padding:24px;
+  }
 }    
     .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
     section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em} .section-head p{margin:0;color:var(--muted);max-width:530px}
@@ -1506,27 +1623,57 @@
   </div>
 </section>
     
-    <section id="financing">
-      <div class="wrap split">
-        <div class="panel">
-          <div class="kicker">BYLD Finance</div>
-          <h2>Equipment financing can be part of the conversation from the start.</h2>
-          <p style="color:var(--muted)">SWF buyers often want to understand payment options before they buy. This page should make financing visible without making the whole site feel like a finance application.</p>
-          <ul class="list">
-            <li>Soft credit pull financing application available through BYLD Finance.</li>
-            <li>Options for startups, growing shops, and established production teams.</li>
-            <li>Simple next step for buyers who are not ready to pay cash.</li>
-          </ul>
-          <p style="font-size:12px;color:var(--muted);margin-top:16px">Financing is subject to credit approval. Terms and programs vary by applicant and equipment.</p>
+<section id="financing" class="finance-section">
+  <div class="wrap">
+    <div class="finance-layout">
+
+      <div class="finance-copy">
+        <div class="kicker">BYLD Finance</div>
+        <h2>Flexible financing options for SWF embroidery machines.</h2>
+        <p>
+          Equipment financing can help you move forward with the right SWF machine while preserving cash flow. BYLD Finance gives qualified buyers a simple way to explore payment options before or after requesting a machine quote.
+        </p>
+
+        <div class="finance-actions">
+          <a class="btn btn-green" href="https://byldfinance.com/pages/apply-now" target="_blank" rel="noopener">Get Pre-Approved</a>
+          <a class="btn btn-light" href="#lead">Request Pricing First</a>
         </div>
-        <div class="panel" style="display:flex;flex-direction:column;justify-content:center;gap:16px">
-          <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/byld_finance_logo.png?v=1746030247" alt="BYLD Finance logo" style="max-width:250px">
-          <h2 style="font-size:34px">Need payments with your quote?</h2>
-          <p style="color:var(--muted);margin:0">Send the customer to financing once they pick a model, or let them apply early so your team knows the budget before the sales call.</p>
-          <div class="hero-actions"><a class="btn btn-green" href="https://byldfinance.com/pages/apply-now" target="_blank" rel="noopener">Apply Now</a><a class="btn btn-light" href="https://byldfinance.com/pages/swf-roi-interactive-calculator" target="_blank" rel="noopener">View ROI Calculator</a></div>
+
+        <p class="finance-disclaimer">
+          Financing is subject to credit approval. Terms, structures, and available programs vary by applicant, equipment, and lender approval.
+        </p>
+      </div>
+
+      <div class="finance-card-grid">
+        <div class="finance-card">
+          <span>01</span>
+          <h3>Soft Credit Pull</h3>
+          <p>Start with a simple application designed to help evaluate options without a hard credit pull upfront.</p>
+        </div>
+
+        <div class="finance-card">
+          <span>02</span>
+          <h3>Startup Friendly</h3>
+          <p>Newer businesses may still have options depending on credit profile, equipment, and overall application strength.</p>
+        </div>
+
+        <div class="finance-card">
+          <span>03</span>
+          <h3>Full Project Planning</h3>
+          <p>Ask about including machine, freight, installation, training, and related startup costs in the buying conversation.</p>
+        </div>
+
+        <div class="finance-card finance-card-dark">
+          <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/byld_finance_logo.png?v=1746030247" alt="BYLD Finance logo">
+          <h3>Want estimated payments?</h3>
+          <p>Use the ROI calculator to think through production volume, revenue goals, and payment expectations.</p>
+          <a class="btn btn-light" href="https://byldfinance.com/pages/swf-roi-interactive-calculator" target="_blank" rel="noopener">View ROI Calculator</a>
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
 
     <section id="lead">
       <div class="wrap leadbox">
