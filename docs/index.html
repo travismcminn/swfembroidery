@@ -47,6 +47,161 @@
     radial-gradient(circle at 90% 18%,rgba(68,159,80,.12),transparent 30%),
     linear-gradient(180deg,#fff 0%,#f6f7fb 100%);
 }
+.site-header{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(229,231,235,.9);
+  box-shadow:0 10px 30px rgba(16,24,40,.04);
+}
+
+.nav-v2{
+  height:82px;
+}
+
+.brand-v2{
+  gap:14px;
+}
+
+.brand-v2 img{
+  height:42px;
+  width:auto;
+}
+
+.brand-v2 span{
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#475467;
+  padding-left:14px;
+  border-left:1px solid var(--line);
+}
+
+.links-v2{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:6px;
+  gap:2px;
+}
+
+.links-v2 a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:9px 13px;
+  border-radius:999px;
+  color:#344054;
+  transition:.15s ease;
+}
+
+.links-v2 a:hover{
+  background:#fff;
+  color:var(--swf-red);
+  box-shadow:0 4px 14px rgba(16,24,40,.06);
+}
+
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.nav-phone{
+  font-size:13px;
+  font-weight:900;
+  color:#344054;
+  white-space:nowrap;
+}
+
+.nav-phone:hover{
+  color:var(--swf-red);
+}
+
+.nav-quote{
+  padding:12px 18px;
+  white-space:nowrap;
+}
+
+.mobile-menu-btn{
+  display:none;
+  width:44px;
+  height:44px;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:14px;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.mobile-menu-btn span{
+  width:18px;
+  height:2px;
+  background:#111827;
+  border-radius:999px;
+}
+
+.mobile-menu{
+  display:none;
+  border-top:1px solid var(--line);
+  background:#fff;
+  padding:14px 16px 18px;
+}
+
+.mobile-menu a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:13px 14px;
+  font-size:14px;
+  font-weight:900;
+  border-radius:14px;
+}
+
+.mobile-menu a:not(.btn):hover{
+  background:#f8fafc;
+  color:var(--swf-red);
+}
+
+@media(max-width:1040px){
+  .links-v2{
+    display:none;
+  }
+
+  .nav-phone{
+    display:none;
+  }
+
+  .mobile-menu-btn{
+    display:flex;
+  }
+
+  body.menu-open .mobile-menu{
+    display:grid;
+    gap:6px;
+  }
+}
+
+@media(max-width:640px){
+  .nav-v2{
+    height:70px;
+  }
+
+  .brand-v2 img{
+    height:34px;
+  }
+
+  .brand-v2 span{
+    display:none;
+  }
+
+  .nav-quote{
+    display:none;
+  }
+}    
 
 .hero-v2{
   background:#fff;
@@ -237,21 +392,37 @@
   </style>
 </head>
 <body>
-  <header class="top">
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="SWF Embroidery by BYLD Equipment">
-        <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/swfnobg.png?v=1759258611" alt="SWF logo">
-        <span>SWF Embroidery <b>by BYLD Equipment</b></span>
-      </a>
-      <nav class="links" aria-label="Primary navigation">
-        <a href="#machines">Machines</a>
-        <a href="#why">Why BYLD</a>
-        <a href="#financing">Financing</a>
-        <a href="#lead">Get Quote</a>
-      </nav>
-      <a class="btn btn-red" href="#lead">Request Pricing</a>
+ <header class="top site-header">
+  <div class="wrap nav nav-v2">
+    <a class="brand brand-v2" href="#top" aria-label="SWF Embroidery Machines">
+      <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/swfnobg_1.png?v=1781197569" alt="SWF logo">
+      <span>Embroidery Machines</span>
+    </a>
+
+    <nav class="links links-v2" aria-label="Primary navigation">
+      <a href="#machines">Machines</a>
+      <a href="#why">Why BYLD</a>
+      <a href="#financing">Financing</a>
+      <a href="#lead">Request Quote</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:+15732084639">Call BYLD Equipment</a>
+      <a class="btn btn-red nav-quote" href="#lead">Request Pricing</a>
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu" onclick="document.body.classList.toggle('menu-open')">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="#machines" onclick="document.body.classList.remove('menu-open')">Machines</a>
+    <a href="#why" onclick="document.body.classList.remove('menu-open')">Why BYLD</a>
+    <a href="#financing" onclick="document.body.classList.remove('menu-open')">Financing</a>
+    <a href="#lead" onclick="document.body.classList.remove('menu-open')">Request Quote</a>
+    <a class="btn btn-red" href="#lead" onclick="document.body.classList.remove('menu-open')">Request Pricing</a>
+  </div>
+</header>
 
   <main id="top">
     
