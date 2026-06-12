@@ -3,8 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SWF Embroidery Machines | BYLD Equipment</title>
-  <meta name="description" content="Compare SWF embroidery machines, request pricing, get financing, and talk with BYLD Equipment about the right setup for your shop.">
+  <title>SWF Embroidery Machines | Pricing, Financing &amp; Support | BYLD Equipment</title>
+  <meta name="description" content="Compare SWF embroidery machines, request pricing, explore financing options, and get help with freight, installation, training, and support through BYLD Equipment.">
+  <link rel="canonical" href="https://swf-embroidery.com/">
+  <meta property="og:title" content="SWF Embroidery Machines | BYLD Equipment">
+  <meta property="og:description" content="Compare SWF embroidery machines, request pricing, explore financing options, and get support with freight, installation, and training.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swf-embroidery.com/">
+  <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -15,2216 +22,621 @@
       --byld-green:#449F50;
       --ink:#111827;
       --muted:#667085;
-      --soft:#F6F7F9;
+      --soft:#F8FAFC;
       --line:#E5E7EB;
       --white:#fff;
       --shadow:0 18px 50px rgba(16,24,40,.10);
-      --radius:22px;
+      --radius:24px;
       --max:1180px;
     }
+
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{margin:0;font-family:Montserrat,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font-family:inherit}
+    section{padding:76px 0;scroll-margin-top:96px}
     .wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}
-    .top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.02em}
-    .brand img{height:38px;width:auto}.brand span{font-size:18px}.brand b{color:var(--swf-red)}
-    .links{display:flex;align-items:center;gap:18px;font-size:14px;font-weight:800}.links a:hover{color:var(--swf-red)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 20px;font-weight:900;border:1px solid transparent;transition:.15s ease;cursor:pointer;text-align:center}
-    .btn:hover{transform:translateY(-1px)}.btn-red{background:var(--swf-red);color:#fff;box-shadow:0 14px 30px rgba(227,27,35,.20)}.btn-green{background:var(--byld-green);color:#fff;box-shadow:0 14px 30px rgba(68,159,80,.18)}.btn-dark{background:#111827;color:#fff}.btn-light{background:#fff;border-color:var(--line);color:var(--ink)}
-    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 15% 10%,rgba(227,27,35,.13),transparent 32%),linear-gradient(180deg,#fff 0%,#f7f8fb 100%);border-bottom:1px solid var(--line)}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:78px 0 64px}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffd3d6;background:#fff5f5;color:#a40f16;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 20px;font-weight:900;border:1px solid transparent;transition:.15s ease;cursor:pointer;text-align:center;line-height:1.1}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-red{background:var(--swf-red);color:#fff;box-shadow:0 14px 30px rgba(227,27,35,.20)}
+    .btn-green{background:var(--byld-green);color:#fff;box-shadow:0 14px 30px rgba(68,159,80,.18)}
+    .btn-light{background:#fff;border-color:var(--line);color:var(--ink)}
+
+    .kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}
     h1{font-size:clamp(40px,5.4vw,72px);line-height:.98;margin:18px 0 16px;letter-spacing:-.055em;color:var(--swf-dark)}
-    h1 span{color:var(--swf-red)}.lead{font-size:clamp(17px,1.7vw,21px);color:#475467;max-width:680px;margin:0 0 24px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.trust div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;font-size:13px;font-weight:800;box-shadow:0 8px 22px rgba(16,24,40,.05)}
-    .hero-v2{
-  background:
-    radial-gradient(circle at 15% 8%,rgba(227,27,35,.16),transparent 34%),
-    radial-gradient(circle at 90% 18%,rgba(68,159,80,.12),transparent 30%),
-    linear-gradient(180deg,#fff 0%,#f6f7fb 100%);
-}
-.site-header{
-  background:rgba(255,255,255,.96);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(229,231,235,.9);
-  box-shadow:0 10px 30px rgba(16,24,40,.04);
-}
-
-.nav-v2{
-  height:82px;
-}
-
-.brand-v2{
-  gap:14px;
-}
-
-.brand-v2 img{
-  height:42px;
-  width:auto;
-}
-
-.brand-v2 span{
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:#475467;
-  padding-left:14px;
-  border-left:1px solid var(--line);
-}
-
-.links-v2{
-  background:#f8fafc;
-  border:1px solid var(--line);
-  border-radius:999px;
-  padding:6px;
-  gap:2px;
-}
-
-.links-v2 a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:9px 13px;
-  border-radius:999px;
-  color:#344054;
-  transition:.15s ease;
-}
-
-.links-v2 a:hover{
-  background:#fff;
-  color:var(--swf-red);
-  box-shadow:0 4px 14px rgba(16,24,40,.06);
-}
-
-.nav-actions{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.nav-phone{
-  font-size:13px;
-  font-weight:900;
-  color:#344054;
-  white-space:nowrap;
-}
-
-.nav-phone:hover{
-  color:var(--swf-red);
-}
-
-.nav-quote{
-  padding:12px 18px;
-  white-space:nowrap;
-}
-
-.mobile-menu-btn{
-  display:none;
-  width:44px;
-  height:44px;
-  border:1px solid var(--line);
-  background:#fff;
-  border-radius:14px;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  gap:5px;
-  cursor:pointer;
-}
-
-.mobile-menu-btn span{
-  width:18px;
-  height:2px;
-  background:#111827;
-  border-radius:999px;
-}
-
-.mobile-menu{
-  display:none;
-  border-top:1px solid var(--line);
-  background:#fff;
-  padding:14px 16px 18px;
-}
-
-.mobile-menu a{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:13px 14px;
-  font-size:14px;
-  font-weight:900;
-  border-radius:14px;
-}
-
-.mobile-menu a:not(.btn):hover{
-  background:#f8fafc;
-  color:var(--swf-red);
-}
-
-@media(max-width:1040px){
-  .links-v2{
-    display:none;
-  }
-
-  .nav-phone{
-    display:none;
-  }
-
-  .mobile-menu-btn{
-    display:flex;
-  }
-
-  body.menu-open .mobile-menu{
-    display:grid;
-    gap:6px;
-  }
-}
-
-@media(max-width:640px){
-  .nav-v2{
-    height:70px;
-  }
-
-  .brand-v2 img{
-    height:34px;
-  }
-
-  .brand-v2 span{
-    display:none;
-  }
-
-  .nav-quote{
-    display:none;
-  }
-}    
-
-.hero-v2{
-  background:#fff;
-  position:relative;
-  overflow:hidden;
-  border-bottom:1px solid var(--line);
-}
-
-.hero-v2:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:
-    linear-gradient(rgba(16,24,40,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16,24,40,.035) 1px, transparent 1px);
-  background-size:42px 42px;
-  mask-image:linear-gradient(to bottom, rgba(0,0,0,.55), transparent 72%);
-  pointer-events:none;
-}
-
-.hero-grid-v2{
-  position:relative;
-  z-index:2;
-  display:grid;
-  grid-template-columns:1fr 1.05fr;
-  gap:46px;
-  align-items:center;
-  padding:88px 0 74px;
-}
-
-.hero-copy{
-  position:relative;
-  z-index:2;
-}
-
-.hero-proof{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-  margin-top:28px;
-}
-
-.hero-proof div{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:15px;
-  box-shadow:0 10px 26px rgba(16,24,40,.06);
-}
-
-.hero-proof b{
-  display:block;
-  font-size:13px;
-  margin-bottom:5px;
-  color:var(--swf-dark);
-}
-
-.hero-proof span{
-  display:block;
-  font-size:12px;
-  color:var(--muted);
-  line-height:1.45;
-}
-
-.hero-machine-card{
-  position:relative;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:34px;
-  padding:24px;
-  box-shadow:0 24px 70px rgba(16,24,40,.14);
-  overflow:hidden;
-}
-
-.hero-watermark{
-  position:absolute;
-  right:20px;
-  top:18px;
-  opacity:.055;
-  pointer-events:none;
-  z-index:1;
-}
-
-.hero-watermark img{
-  width:190px;
-  height:auto;
-}
-
-.hero-machine-top{
-  position:relative;
-  z-index:3;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:14px;
-  margin-bottom:14px;
-}
-
-.hero-machine-top span{
-  display:inline-flex;
-  background:#fff5f5;
-  color:#b91c1c;
-  border:1px solid #fecdd3;
-  border-radius:999px;
-  padding:7px 10px;
-  font-size:11px;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:.06em;
-}
-
-.hero-machine-top strong{
-  font-size:14px;
-  color:var(--swf-dark);
-}
-
-.hero-machine-img{
-  position:relative;
-  z-index:2;
-  width:100%;
-  max-height:460px;
-  object-fit:contain;
-  margin:0 auto;
-}
-
-.hero-machine-bottom{
-  position:relative;
-  z-index:3;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-top:18px;
-}
-
-.hero-machine-bottom div{
-  background:var(--soft);
-  border:1px solid var(--line);
-  border-radius:16px;
-  padding:13px;
-}
-
-.hero-machine-bottom b{
-  display:block;
-  font-size:13px;
-  color:var(--ink);
-}
-
-.hero-machine-bottom span{
-  display:block;
-  font-size:12px;
-  color:var(--muted);
-  margin-top:3px;
-}
-
-@media(max-width:960px){
-  .hero-grid-v2{
-    grid-template-columns:1fr;
-    padding:58px 0;
-  }
-
-  .hero-proof{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:640px){
-  .hero-machine-top{
-    display:grid;
-    grid-template-columns:1fr;
-  }
-
-  .hero-machine-bottom{
-    grid-template-columns:1fr;
-  }
-
-  .hero-watermark img{
-    width:145px;
-  }
-}
-.machine-lineup{
-  background:#fff;
-}
-
-.lineup-head p{
-  max-width:560px;
-}
-
-.fit-strip{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin-bottom:24px;
-}
-
-.fit-strip div{
-  background:#f8fafc;
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:18px;
-}
-
-.fit-strip span{
-  display:block;
-  color:var(--swf-red);
-  font-weight:900;
-  font-size:12px;
-  letter-spacing:.08em;
-  margin-bottom:8px;
-}
-
-.fit-strip b{
-  display:block;
-  font-size:16px;
-  margin-bottom:4px;
-}
-
-.fit-strip p{
-  margin:0;
-  color:var(--muted);
-  font-size:13px;
-}
-
-.machine-grid-v2{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.machine-card-v2{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:26px;
-  overflow:hidden;
-  box-shadow:0 12px 34px rgba(16,24,40,.07);
-  display:flex;
-  flex-direction:column;
-}
-
-.machine-card-v2.featured{
-  grid-column:span 3;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  align-items:center;
-}
-
-.machine-media-v2{
-  min-height:245px;
-  background:#f8fafc;
-  border-bottom:1px solid var(--line);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:22px;
-}
-
-.machine-card-v2.featured .machine-media-v2{
-  min-height:390px;
-  border-bottom:0;
-  border-right:1px solid var(--line);
-}
-
-.machine-media-v2 img{
-  max-height:100%;
-  object-fit:contain;
-}
-
-.machine-content-v2{
-  padding:22px;
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-  flex:1;
-}
-
-.machine-meta{
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  align-items:center;
-}
-
-.machine-meta span{
-  display:inline-flex;
-  background:#fff5f5;
-  color:#b91c1c;
-  border:1px solid #fecdd3;
-  border-radius:999px;
-  padding:6px 10px;
-  font-size:11px;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:.06em;
-}
-
-.machine-meta strong{
-  color:#475467;
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-}
-
-.machine-card-v2 h3{
-  margin:0;
-  font-size:24px;
-  letter-spacing:-.03em;
-  color:var(--swf-dark);
-}
-
-.machine-card-v2 p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-.machine-points{
-  display:grid;
-  gap:10px;
-}
-
-.machine-points div{
-  background:#f8fafc;
-  border:1px solid var(--line);
-  border-radius:16px;
-  padding:13px;
-}
-
-.machine-points b{
-  display:block;
-  font-size:12px;
-  margin-bottom:4px;
-  color:var(--ink);
-}
-
-.machine-points span{
-  display:block;
-  font-size:13px;
-  color:var(--muted);
-  line-height:1.45;
-}
-
-.machine-actions-v2{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
-  margin-top:auto;
-}
-
-.machine-actions-v2 .btn{
-  padding:12px 14px;
-  font-size:12px;
-}
-
-.why-swf{
-  background:#fff;
-}
-
-.swf-feature-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.swf-feature-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:26px;
-  padding:24px;
-  box-shadow:0 12px 34px rgba(16,24,40,.06);
-}
-
-.swf-feature-large{
-  grid-column:span 3;
-  background:#101828;
-  color:#fff;
-  position:relative;
-  overflow:hidden;
-}
-
-.swf-feature-large:before{
-  content:"";
-  position:absolute;
-  inset:20px;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:22px;
-}
-
-.swf-feature-label{
-  display:inline-flex;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:999px;
-  padding:8px 12px;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  margin-bottom:18px;
-  position:relative;
-  z-index:2;
-}
-
-.swf-feature-large h3{
-  position:relative;
-  z-index:2;
-  margin:0 0 14px;
-  font-size:38px;
-  line-height:1.05;
-  letter-spacing:-.04em;
-  max-width:700px;
-}
-
-.swf-feature-large p{
-  position:relative;
-  z-index:2;
-  margin:0;
-  color:#d0d5dd;
-  max-width:700px;
-}
-
-.swf-stats{
-  position:relative;
-  z-index:2;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin-top:28px;
-}
-
-.swf-stats div{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:16px;
-  padding:16px;
-}
-
-.swf-stats strong{
-  display:block;
-  font-size:16px;
-  margin-bottom:4px;
-}
-
-.swf-stats span{
-  color:#d0d5dd;
-  font-size:13px;
-}
-
-.swf-icon{
-  width:42px;
-  height:42px;
-  border-radius:14px;
-  background:#fff5f5;
-  border:1px solid #fecdd3;
-  color:var(--swf-red);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:12px;
-  font-weight:900;
-  margin-bottom:16px;
-}
-
-.swf-feature-card h3{
-  margin:0 0 8px;
-  font-size:22px;
-  letter-spacing:-.03em;
-}
-
-.swf-feature-card p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-@media(max-width:960px){
-
-  .swf-feature-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .swf-feature-large{
-    grid-column:span 2;
-  }
-
-  .swf-stats{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:640px){
-
-  .swf-feature-grid{
-    grid-template-columns:1fr;
-  }
-
-  .swf-feature-large{
-    grid-column:span 1;
-  }
-
-  .swf-feature-large h3{
-    font-size:30px;
-  }
-}    
-
-.why-byld{
-  background:#f8fafc;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-}
-
-.why-head p{
-  max-width:570px;
-}
-
-.why-grid{
-  display:grid;
-  grid-template-columns:1.1fr 1fr 1fr;
-  gap:18px;
-}
-
-.why-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:26px;
-  padding:24px;
-  box-shadow:0 12px 34px rgba(16,24,40,.06);
-}
-
-.why-card-dark{
-  grid-row:span 2;
-  background:#111827;
-  color:#fff;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  gap:24px;
-  min-height:430px;
-  position:relative;
-  overflow:hidden;
-}
-
-.why-card-dark:before{
-  content:"";
-  position:absolute;
-  inset:18px;
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:22px;
-  pointer-events:none;
-}
-
-.why-card-dark h3,
-.why-card-dark p,
-.why-card-dark .btn,
-.why-label{
-  position:relative;
-  z-index:2;
-}
-
-.why-label{
-  display:inline-flex;
-  align-self:flex-start;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.14);
-  color:#fff;
-  border-radius:999px;
-  padding:8px 11px;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
-
-.why-card h3{
-  margin:0 0 8px;
-  font-size:22px;
-  line-height:1.12;
-  letter-spacing:-.03em;
-}
-
-.why-card-dark h3{
-  font-size:34px;
-}
-
-.why-card p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-.why-card-dark p{
-  color:#d0d5dd;
-}
-
-.why-icon{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:42px;
-  height:42px;
-  border-radius:14px;
-  background:#fff5f5;
-  border:1px solid #fecdd3;
-  color:var(--swf-red);
-  font-size:12px;
-  font-weight:900;
-  margin-bottom:16px;
-}
-
-@media(max-width:960px){
-  .why-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .why-card-dark{
-    grid-column:span 2;
-    grid-row:auto;
-    min-height:auto;
-  }
-}
-
-@media(max-width:640px){
-  .why-grid{
-    grid-template-columns:1fr;
-  }
-
-  .why-card-dark{
-    grid-column:span 1;
-  }
-
-  .why-card-dark h3{
-    font-size:28px;
-  }
-}    
-
-@media(max-width:960px){
-  .fit-strip{
-    grid-template-columns:1fr;
-  }
-
-  .machine-grid-v2{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .machine-card-v2.featured{
-    grid-column:span 2;
-    grid-template-columns:1fr;
-  }
-
-  .machine-card-v2.featured .machine-media-v2{
-    border-right:0;
-    border-bottom:1px solid var(--line);
-    min-height:300px;
-  }
-}
-
-@media(max-width:640px){
-  .machine-grid-v2{
-    grid-template-columns:1fr;
-  }
-
-  .machine-card-v2.featured{
-    grid-column:span 1;
-  }
-
-  .machine-actions-v2{
-    grid-template-columns:1fr;
-  }
-
-  .machine-meta{
-    align-items:flex-start;
-    flex-direction:column;
-  }
-}    
-
-.support-section{
-  background:#fff;
-}
-
-.support-layout{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:18px;
-}
-
-.support-main,
-.support-side{
-  display:grid;
-  gap:18px;
-}
-
-.support-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:26px;
-  padding:24px;
-  box-shadow:0 12px 34px rgba(16,24,40,.06);
-}
-
-.support-card-large{
-  min-height:100%;
-  background:#101828;
-  color:#fff;
-  position:relative;
-  overflow:hidden;
-}
-
-.support-card-large:before{
-  content:"";
-  position:absolute;
-  inset:20px;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:20px;
-}
-
-.support-badge{
-  position:relative;
-  z-index:2;
-  display:inline-flex;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:999px;
-  padding:8px 12px;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
-
-.support-card-large h3{
-  position:relative;
-  z-index:2;
-  margin:18px 0 12px;
-  font-size:38px;
-  line-height:1.05;
-  letter-spacing:-.04em;
-  max-width:700px;
-}
-
-.support-card-large p{
-  position:relative;
-  z-index:2;
-  color:#d0d5dd;
-  max-width:700px;
-}
-
-.support-highlight-grid{
-  position:relative;
-  z-index:2;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-  margin-top:28px;
-}
-
-.support-highlight-grid div{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:16px;
-  padding:16px;
-}
-
-.support-highlight-grid strong{
-  display:block;
-  margin-bottom:5px;
-}
-
-.support-highlight-grid span{
-  color:#d0d5dd;
-  font-size:13px;
-}
-
-.support-number{
-  width:42px;
-  height:42px;
-  border-radius:14px;
-  background:#fff5f5;
-  border:1px solid #fecdd3;
-  color:var(--swf-red);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:12px;
-  font-weight:900;
-  margin-bottom:16px;
-}
-
-.support-card h3{
-  margin:0 0 8px;
-  font-size:22px;
-  letter-spacing:-.03em;
-}
-
-.support-card p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-@media(max-width:960px){
-
-  .support-layout{
-    grid-template-columns:1fr;
-  }
-
-  .support-highlight-grid{
-    grid-template-columns:1fr;
-  }
-
-  .support-card-large h3{
-    font-size:30px;
-  }
-
-}
-
-.finance-section{
-  background:#f8fafc;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-}
-
-.finance-layout{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:28px;
-  align-items:center;
-}
-
-.finance-copy{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:30px;
-  padding:32px;
-  box-shadow:0 12px 34px rgba(16,24,40,.06);
-}
-
-.finance-copy h2{
-  margin-bottom:14px;
-}
-
-.finance-copy p{
-  color:var(--muted);
-  margin:0;
-}
-
-.finance-actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin:24px 0 16px;
-}
-
-.finance-disclaimer{
-  font-size:12px;
-  line-height:1.45;
-}
-
-.finance-card-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-}
-
-.finance-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:26px;
-  padding:24px;
-  box-shadow:0 12px 34px rgba(16,24,40,.06);
-}
-
-.finance-card span{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  width:42px;
-  height:42px;
-  border-radius:14px;
-  background:#ecfdf3;
-  border:1px solid #bbf7d0;
-  color:var(--byld-green);
-  font-size:12px;
-  font-weight:900;
-  margin-bottom:16px;
-}
-
-.finance-card h3{
-  margin:0 0 8px;
-  font-size:22px;
-  letter-spacing:-.03em;
-}
-
-.finance-card p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-.finance-card-dark{
-  background:#111827;
-  color:#fff;
-}
-
-.finance-card-dark img{
-  max-width:220px;
-  margin-bottom:20px;
-  background:#fff;
-  border-radius:14px;
-  padding:12px;
-}
-
-.finance-card-dark p{
-  color:#d0d5dd;
-  margin-bottom:18px;
-}
-
-@media(max-width:960px){
-  .finance-layout{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:640px){
-  .finance-card-grid{
-    grid-template-columns:1fr;
-  }
-
-  .finance-copy{
-    padding:24px;
-  }
-}  
-
-.trade-section{
-  background:#fff;
-}
-
-.trade-box{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:24px;
-  align-items:center;
-  background:#101828;
-  color:#fff;
-  border-radius:34px;
-  padding:34px;
-  box-shadow:0 20px 60px rgba(16,24,40,.12);
-  position:relative;
-  overflow:hidden;
-}
-
-.trade-box:before{
-  content:"";
-  position:absolute;
-  inset:20px;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:26px;
-  pointer-events:none;
-}
-
-.trade-copy,
-.trade-grid{
-  position:relative;
-  z-index:2;
-}
-
-.trade-copy h2{
-  margin-bottom:14px;
-}
-
-.trade-copy p{
-  color:#d0d5dd;
-  margin:0;
-}
-
-.trade-actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:24px;
-}
-
-.trade-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:14px;
-}
-
-.trade-grid div{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:20px;
-  padding:18px;
-}
-
-.trade-grid span{
-  display:block;
-  color:#fff;
-  opacity:.7;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:.08em;
-  margin-bottom:8px;
-}
-
-.trade-grid b{
-  display:block;
-  margin-bottom:5px;
-}
-
-.trade-grid p{
-  margin:0;
-  color:#d0d5dd;
-  font-size:13px;
-}
-
-@media(max-width:960px){
-  .trade-box{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:640px){
-  .trade-box{
-    padding:24px;
-    border-radius:26px;
-  }
-}    
-
-.faq-section{
-  background:#f8fafc;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-}
-
-.faq-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
-
-.faq-item{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:18px 20px;
-  box-shadow:0 10px 26px rgba(16,24,40,.05);
-}
-
-.faq-item summary{
-  cursor:pointer;
-  font-weight:900;
-  color:var(--swf-dark);
-  list-style:none;
-  position:relative;
-  padding-right:28px;
-}
-
-.faq-item summary::-webkit-details-marker{
-  display:none;
-}
-
-.faq-item summary:after{
-  content:"+";
-  position:absolute;
-  right:0;
-  top:0;
-  color:var(--swf-red);
-  font-size:22px;
-  line-height:1;
-}
-
-.faq-item[open] summary:after{
-  content:"−";
-}
-
-.faq-item p{
-  margin:12px 0 0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-@media(max-width:760px){
-  .faq-grid{
-    grid-template-columns:1fr;
-  }
-}  
-
-.quote-section{
-  background:#fff;
-}
-
-.quote-shell{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:26px;
-  align-items:stretch;
-  background:#101828;
-  border-radius:34px;
-  padding:34px;
-  box-shadow:0 24px 70px rgba(16,24,40,.14);
-}
-
-.quote-copy{
-  color:#fff;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-.quote-copy h2{
-  margin-bottom:14px;
-}
-
-.quote-copy p{
-  color:#d0d5dd;
-  margin:0;
-}
-
-.quote-checks{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
-  margin-top:24px;
-}
-
-.quote-checks div{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:16px;
-  padding:13px;
-  font-size:13px;
-  font-weight:800;
-}
-
-.quote-checks div:before{
-  content:"✓";
-  color:var(--byld-green);
-  margin-right:7px;
-}
-
-.quote-contact{
-  display:grid;
-  gap:8px;
-  margin-top:24px;
-}
-
-.quote-contact a{
-  color:#fff;
-  font-weight:900;
-}
-
-.quote-form{
-  background:#fff;
-  border-radius:26px;
-  padding:24px;
-}
-
-.form-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
-
-.quote-form label{
-  display:grid;
-  gap:7px;
-  font-size:12px;
-  font-weight:900;
-  color:#344054;
-}
-
-.quote-form input,
-.quote-form select,
-.quote-form textarea{
-  width:100%;
-  border:1px solid var(--line);
-  border-radius:14px;
-  padding:13px 14px;
-  font:inherit;
-  font-size:14px;
-  color:var(--ink);
-  background:#fff;
-  outline:none;
-}
-
-.quote-form input:focus,
-.quote-form select:focus,
-.quote-form textarea:focus{
-  border-color:var(--swf-red);
-  box-shadow:0 0 0 4px rgba(227,27,35,.08);
-}
-
-.quote-form .full{
-  grid-column:1 / -1;
-}
-
-.form-submit{
-  width:100%;
-  margin-top:16px;
-  border:0;
-}
-
-.form-note{
-  margin:12px 0 0;
-  color:var(--muted);
-  font-size:11px;
-  line-height:1.45;
-}
-
-.thank-you-box{
-  margin-top:16px;
-  display:none;
-  background:#ecfdf3;
-  border:1px solid #bbf7d0;
-  color:#166534;
-  border-radius:18px;
-  padding:16px;
-}
-
-.thank-you-box:target{
-  display:block;
-}
-
-.thank-you-box strong{
-  display:block;
-  margin-bottom:3px;
-}
-
-.thank-you-box span{
-  font-size:13px;
-}
-
-@media(max-width:960px){
-  .quote-shell{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:640px){
-  .quote-shell{
-    padding:24px;
-    border-radius:26px;
-  }
-
-  .form-grid,
-  .quote-checks{
-    grid-template-columns:1fr;
-  }
-
-  .quote-form{
-    padding:20px;
-  }
-}    
-    .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
-    section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em} .section-head p{margin:0;color:var(--muted);max-width:530px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 28px rgba(16,24,40,.06);display:flex;flex-direction:column}.pic{height:230px;background:#fff;display:flex;align-items:center;justify-content:center;padding:18px;border-bottom:1px solid var(--line)}.pic img{max-height:100%;object-fit:contain}.card-body{padding:20px;display:flex;flex-direction:column;gap:13px;flex:1}.tag{align-self:flex-start;background:#fff5f5;color:#b91c1c;border:1px solid #fecdd3;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.card h3{font-size:22px;margin:0;letter-spacing:-.02em}.card p{margin:0;color:var(--muted);font-size:14px}.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.spec{background:var(--soft);border-radius:12px;padding:10px;font-size:12px}.spec b{display:block;font-size:14px;color:var(--ink)}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:auto}.card-actions .btn{padding:11px 12px;font-size:12px}
-    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 10px 28px rgba(16,24,40,.06)}.panel.dark{background:#111827;color:#fff}.panel.dark p,.panel.dark li{color:#d0d5dd}.list{display:grid;gap:12px;margin:18px 0 0;padding:0;list-style:none}.list li{padding-left:28px;position:relative;color:#475467}.list li:before{content:"✓";position:absolute;left:0;color:var(--byld-green);font-weight:900}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}.step b{display:block;font-size:34px;color:var(--swf-red);line-height:1}.step strong{display:block;margin:10px 0 4px}.step p{margin:0;color:var(--muted);font-size:13px}
-    .leadbox{background:linear-gradient(135deg,#111827 0%,#1f2937 68%,#2b1114 100%);color:#fff;border-radius:32px;padding:36px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.leadbox p{color:#d0d5dd}.leadbox .form{background:#fff;border-radius:22px;padding:18px;color:var(--ink)}.form iframe{width:100%;min-height:680px;border:0;display:block}.contact-mini{display:grid;gap:10px;margin-top:18px}.contact-mini a{color:#fff;font-weight:800}
-    footer{background:#0b101b;color:#fff;padding:34px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.foot p{margin:0;color:#b8c0cc;font-size:13px}
-    @media(max-width:960px){.links{display:none}.hero-grid,.split,.leadbox{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:12px}.trust,.steps{grid-template-columns:1fr}.hero-grid{padding:52px 0}}
-    @media(max-width:640px){.cards{grid-template-columns:1fr}.nav{height:66px}.brand span{font-size:15px}.hero-actions .btn,.card-actions .btn{width:100%}.card-actions{grid-template-columns:1fr}.leadbox{padding:24px;border-radius:24px}section{padding:54px 0}}
+    h1 span{color:var(--swf-red)}
+    h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em;color:var(--swf-dark)}
+    h3{color:var(--swf-dark)}
+    .lead{font-size:clamp(17px,1.7vw,21px);color:#475467;max-width:680px;margin:0 0 24px}
+    .section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}
+    .section-head p{margin:0;color:var(--muted);max-width:570px}
+
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(229,231,235,.9);box-shadow:0 10px 30px rgba(16,24,40,.04)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{display:flex;align-items:center;gap:14px;font-weight:900;letter-spacing:-.02em}
+    .brand img{height:42px;width:auto}
+    .brand span{font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#475467;padding-left:14px;border-left:1px solid var(--line)}
+    .links{display:flex;align-items:center;gap:2px;font-size:14px;font-weight:800;background:#f8fafc;border:1px solid var(--line);border-radius:999px;padding:6px}
+    .links a{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;border-radius:999px;color:#344054;transition:.15s ease}
+    .links a:hover{background:#fff;color:var(--swf-red);box-shadow:0 4px 14px rgba(16,24,40,.06)}
+    .nav-actions{display:flex;align-items:center;gap:10px}
+    .nav-phone{font-size:13px;font-weight:900;color:#344054;white-space:nowrap}
+    .nav-phone:hover{color:var(--swf-red)}
+    .nav-quote{padding:12px 18px;white-space:nowrap}
+    .mobile-menu-btn{display:none;width:44px;height:44px;border:1px solid var(--line);background:#fff;border-radius:14px;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer}
+    .mobile-menu-btn span{width:18px;height:2px;background:#111827;border-radius:999px}
+    .mobile-menu{display:none;border-top:1px solid var(--line);background:#fff;padding:14px 16px 18px}
+    .mobile-menu a{display:flex;align-items:center;justify-content:center;padding:13px 14px;font-size:14px;font-weight:900;border-radius:14px}
+    .mobile-menu a:not(.btn):hover{background:#f8fafc;color:var(--swf-red)}
+
+    .hero{background:#fff;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(16,24,40,.035) 1px, transparent 1px),linear-gradient(90deg, rgba(16,24,40,.035) 1px, transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom, rgba(0,0,0,.55), transparent 72%);pointer-events:none}
+    .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.05fr;gap:46px;align-items:center;padding:88px 0 74px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffd3d6;background:#fff5f5;color:#a40f16;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+    .hero-proof div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:0 10px 26px rgba(16,24,40,.06)}
+    .hero-proof b{display:block;font-size:13px;margin-bottom:5px;color:var(--swf-dark)}
+    .hero-proof span{display:block;font-size:12px;color:var(--muted);line-height:1.45}
+    .hero-machine-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:34px;padding:24px;box-shadow:0 24px 70px rgba(16,24,40,.14);overflow:hidden}
+    .hero-watermark{position:absolute;right:20px;top:18px;opacity:.055;pointer-events:none;z-index:1}
+    .hero-watermark img{width:190px;height:auto}
+    .hero-machine-top{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:14px}
+    .hero-machine-top span{display:inline-flex;background:#fff5f5;color:#b91c1c;border:1px solid #fecdd3;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+    .hero-machine-top strong{font-size:14px;color:var(--swf-dark)}
+    .hero-machine-img{position:relative;z-index:2;width:100%;max-height:460px;object-fit:contain;margin:0 auto}
+    .hero-machine-bottom{position:relative;z-index:3;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+    .hero-machine-bottom div{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:13px}
+    .hero-machine-bottom b{display:block;font-size:13px;color:var(--ink)}
+    .hero-machine-bottom span{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+
+    .machine-lineup{background:#fff}
+    .fit-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+    .fit-strip div{background:#f8fafc;border:1px solid var(--line);border-radius:20px;padding:18px}
+    .fit-strip span{display:block;color:var(--swf-red);font-weight:900;font-size:12px;letter-spacing:.08em;margin-bottom:8px}
+    .fit-strip b{display:block;font-size:16px;margin-bottom:4px}
+    .fit-strip p{margin:0;color:var(--muted);font-size:13px}
+    .machine-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .machine-card{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 12px 34px rgba(16,24,40,.07);display:flex;flex-direction:column}
+    .machine-card.featured{grid-column:span 3;display:grid;grid-template-columns:1.1fr .9fr;align-items:center}
+    .machine-media{min-height:245px;background:#f8fafc;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:22px}
+    .machine-card.featured .machine-media{min-height:390px;border-bottom:0;border-right:1px solid var(--line)}
+    .machine-media img{max-height:100%;object-fit:contain}
+    .machine-content{padding:22px;display:flex;flex-direction:column;gap:14px;flex:1}
+    .machine-meta{display:flex;justify-content:space-between;gap:10px;align-items:center}
+    .machine-meta span{display:inline-flex;background:#fff5f5;color:#b91c1c;border:1px solid #fecdd3;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+    .machine-meta strong{color:#475467;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+    .machine-card h3{margin:0;font-size:24px;letter-spacing:-.03em;color:var(--swf-dark)}
+    .machine-card p{margin:0;color:var(--muted);font-size:14px}
+    .machine-points{display:grid;gap:10px}
+    .machine-points div{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:13px}
+    .machine-points b{display:block;font-size:12px;margin-bottom:4px;color:var(--ink)}
+    .machine-points span{display:block;font-size:13px;color:var(--muted);line-height:1.45}
+    .machine-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+    .machine-actions .btn{padding:12px 14px;font-size:12px}
+
+    .why-swf{background:#fff}
+    .swf-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .swf-feature-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 12px 34px rgba(16,24,40,.06)}
+    .swf-feature-large{grid-column:span 3;background:#101828;color:#fff;position:relative;overflow:hidden}
+    .swf-feature-large:before{content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.08);border-radius:22px}
+    .swf-feature-label{display:inline-flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 12px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;position:relative;z-index:2}
+    .swf-feature-large h3{position:relative;z-index:2;margin:0 0 14px;font-size:38px;line-height:1.05;letter-spacing:-.04em;max-width:700px;color:#fff}
+    .swf-feature-large p{position:relative;z-index:2;margin:0;color:#d0d5dd;max-width:700px}
+    .swf-stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+    .swf-stats div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    .swf-stats strong{display:block;font-size:16px;margin-bottom:4px}
+    .swf-stats span{color:#d0d5dd;font-size:13px}
+    .number-icon{width:42px;height:42px;border-radius:14px;background:#fff5f5;border:1px solid #fecdd3;color:var(--swf-red);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;margin-bottom:16px}
+    .swf-feature-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.03em}
+    .swf-feature-card p{margin:0;color:var(--muted);font-size:14px}
+
+    .why-byld{background:#f8fafc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .why-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:18px}
+    .why-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 12px 34px rgba(16,24,40,.06)}
+    .why-card-dark{grid-row:span 2;background:#111827;color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:430px;position:relative;overflow:hidden}
+    .why-card-dark:before{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.10);border-radius:22px;pointer-events:none}
+    .why-card-dark h3,.why-card-dark p,.why-card-dark .btn,.why-label{position:relative;z-index:2}
+    .why-label{display:inline-flex;align-self:flex-start;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:999px;padding:8px 11px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .why-card h3{margin:0 0 8px;font-size:22px;line-height:1.12;letter-spacing:-.03em}
+    .why-card-dark h3{font-size:34px;color:#fff}
+    .why-card p{margin:0;color:var(--muted);font-size:14px}
+    .why-card-dark p{color:#d0d5dd}
+
+    .support-section{background:#fff}
+    .support-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    .support-main,.support-side{display:grid;gap:18px}
+    .support-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 12px 34px rgba(16,24,40,.06)}
+    .support-card-large{min-height:100%;background:#101828;color:#fff;position:relative;overflow:hidden}
+    .support-card-large:before{content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.08);border-radius:20px}
+    .support-badge{position:relative;z-index:2;display:inline-flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 12px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .support-card-large h3{position:relative;z-index:2;margin:18px 0 12px;font-size:38px;line-height:1.05;letter-spacing:-.04em;max-width:700px;color:#fff}
+    .support-card-large p{position:relative;z-index:2;color:#d0d5dd;max-width:700px}
+    .support-highlight-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+    .support-highlight-grid div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    .support-highlight-grid strong{display:block;margin-bottom:5px}
+    .support-highlight-grid span{color:#d0d5dd;font-size:13px}
+    .support-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.03em}
+    .support-card p{margin:0;color:var(--muted);font-size:14px}
+
+    .finance-section{background:#f8fafc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .finance-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center}
+    .finance-copy{background:#fff;border:1px solid var(--line);border-radius:30px;padding:32px;box-shadow:0 12px 34px rgba(16,24,40,.06)}
+    .finance-copy h2{margin-bottom:14px}
+    .finance-copy p{color:var(--muted);margin:0}
+    .finance-actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 16px}
+    .finance-disclaimer{font-size:12px;line-height:1.45}
+    .finance-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .finance-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 12px 34px rgba(16,24,40,.06)}
+    .finance-card .number-icon{background:#ecfdf3;border-color:#bbf7d0;color:var(--byld-green)}
+    .finance-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.03em}
+    .finance-card p{margin:0;color:var(--muted);font-size:14px}
+    .finance-card-dark{background:#111827;color:#fff}
+    .finance-card-dark img{max-width:220px;margin-bottom:20px;background:#fff;border-radius:14px;padding:12px}
+    .finance-card-dark h3{color:#fff}
+    .finance-card-dark p{color:#d0d5dd;margin-bottom:18px}
+
+    .trade-section{background:#fff}
+    .trade-box{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:center;background:#101828;color:#fff;border-radius:34px;padding:34px;box-shadow:0 20px 60px rgba(16,24,40,.12);position:relative;overflow:hidden}
+    .trade-box:before{content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.08);border-radius:26px;pointer-events:none}
+    .trade-copy,.trade-grid{position:relative;z-index:2}
+    .trade-copy h2{margin-bottom:14px;color:#fff}
+    .trade-copy p{color:#d0d5dd;margin:0}
+    .trade-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .trade-grid{display:grid;grid-template-columns:1fr;gap:14px}
+    .trade-grid div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px}
+    .trade-grid span{display:block;color:#fff;opacity:.7;font-size:12px;font-weight:900;letter-spacing:.08em;margin-bottom:8px}
+    .trade-grid b{display:block;margin-bottom:5px}
+    .trade-grid p{margin:0;color:#d0d5dd;font-size:13px}
+
+    .faq-section{background:#f8fafc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .faq-item{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 20px;box-shadow:0 10px 26px rgba(16,24,40,.05)}
+    .faq-item summary{cursor:pointer;font-weight:900;color:var(--swf-dark);list-style:none;position:relative;padding-right:28px}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary:after{content:"+";position:absolute;right:0;top:0;color:var(--swf-red);font-size:22px;line-height:1}
+    .faq-item[open] summary:after{content:"−"}
+    .faq-item p{margin:12px 0 0;color:var(--muted);font-size:14px}
+
+    .quote-section{background:#fff}
+    .quote-shell{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:stretch;background:#101828;border-radius:34px;padding:34px;box-shadow:0 24px 70px rgba(16,24,40,.14)}
+    .quote-copy{color:#fff;display:flex;flex-direction:column;justify-content:center}
+    .quote-copy h2{margin-bottom:14px;color:#fff}
+    .quote-copy p{color:#d0d5dd;margin:0}
+    .quote-checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+    .quote-checks div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:13px;font-size:13px;font-weight:800}
+    .quote-checks div:before{content:"✓";color:var(--byld-green);margin-right:7px}
+    .quote-contact{display:grid;gap:8px;margin-top:24px}
+    .quote-contact a{color:#fff;font-weight:900}
+    .quote-form{background:#fff;border-radius:26px;padding:24px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .quote-form label{display:grid;gap:7px;font-size:12px;font-weight:900;color:#344054}
+    .quote-form input,.quote-form select,.quote-form textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:13px 14px;font:inherit;font-size:14px;color:var(--ink);background:#fff;outline:none}
+    .quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{border-color:var(--swf-red);box-shadow:0 0 0 4px rgba(227,27,35,.08)}
+    .quote-form .full{grid-column:1 / -1}
+    .form-submit{width:100%;margin-top:16px;border:0}
+    .form-note{margin:12px 0 0;color:var(--muted);font-size:11px;line-height:1.45}
+    .thank-you-box{margin-top:16px;display:none;background:#ecfdf3;border:1px solid #bbf7d0;color:#166534;border-radius:18px;padding:16px}
+    .thank-you-box:target{display:block}
+    .thank-you-box strong{display:block;margin-bottom:3px}
+    .thank-you-box span{font-size:13px}
+
+    .sticky-mobile-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:10px 12px;box-shadow:0 -10px 28px rgba(16,24,40,.08)}
+    .sticky-mobile-cta .btn{width:100%}
+
+    footer{background:#0b101b;color:#fff;padding:34px 0 86px}
+    .foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+    .foot .brand img{height:36px}
+    .foot p{margin:0;color:#b8c0cc;font-size:13px}
+
+    @media(max-width:1100px){
+      .links{display:none}
+      .nav-phone{display:none}
+      .mobile-menu-btn{display:flex}
+      body.menu-open .mobile-menu{display:grid;gap:6px}
+    }
+
+    @media(max-width:960px){
+      .hero-grid,.support-layout,.finance-layout,.trade-box,.quote-shell{grid-template-columns:1fr}
+      .hero-proof,.fit-strip{grid-template-columns:1fr}
+      .machine-grid{grid-template-columns:1fr 1fr}
+      .machine-card.featured{grid-column:span 2;grid-template-columns:1fr}
+      .machine-card.featured .machine-media{border-right:0;border-bottom:1px solid var(--line);min-height:300px}
+      .swf-feature-grid,.why-grid{grid-template-columns:1fr 1fr}
+      .swf-feature-large,.why-card-dark{grid-column:span 2;grid-row:auto;min-height:auto}
+      .swf-stats,.support-highlight-grid{grid-template-columns:1fr}
+      .section-head{display:block}
+      .section-head p{margin-top:12px}
+    }
+
+    @media(max-width:760px){
+      .faq-grid{grid-template-columns:1fr}
+      .sticky-mobile-cta{display:block}
+    }
+
+    @media(max-width:640px){
+      section{padding:54px 0}
+      .nav{height:70px}
+      .brand img{height:34px}
+      .brand span,.nav-quote{display:none}
+      .hero-grid{padding:58px 0}
+      .hero-actions .btn,.machine-actions .btn{width:100%}
+      .hero-machine-top{display:grid;grid-template-columns:1fr}
+      .hero-machine-bottom,.machine-grid,.finance-card-grid,.form-grid,.quote-checks{grid-template-columns:1fr}
+      .hero-watermark img{width:145px}
+      .machine-card.featured{grid-column:span 1}
+      .machine-actions{grid-template-columns:1fr}
+      .machine-meta{align-items:flex-start;flex-direction:column}
+      .swf-feature-grid,.why-grid{grid-template-columns:1fr}
+      .swf-feature-large,.why-card-dark{grid-column:span 1}
+      .swf-feature-large h3,.support-card-large h3{font-size:30px}
+      .why-card-dark h3{font-size:28px}
+      .finance-copy,.quote-form{padding:22px}
+      .trade-box,.quote-shell{padding:24px;border-radius:26px}
+    }
   </style>
 </head>
 <body>
- <header class="top site-header">
-  <div class="wrap nav nav-v2">
-    <a class="brand brand-v2" href="#top" aria-label="SWF Embroidery Machines">
-      <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/swfnobg_1.png?v=1781197569" alt="SWF logo">
-      <span>Embroidery Machines</span>
-    </a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="SWF Embroidery Machines">
+        <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/swfnobg_1.png?v=1781197569" alt="SWF logo">
+        <span>Embroidery Machines</span>
+      </a>
 
-    <nav class="links links-v2" aria-label="Primary navigation">
-      <a href="#machines">Machines</a>
-      <a href="#why">Why BYLD</a>
-      <a href="#financing">Financing</a>
-      <a href="#lead">Request Quote</a>
-    </nav>
+      <nav class="links" aria-label="Primary navigation">
+        <a href="#machines">Machines</a>
+        <a href="#why-swf">Why SWF</a>
+        <a href="#support">Support</a>
+        <a href="#financing">Financing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#lead">Request Pricing</a>
+      </nav>
 
-    <div class="nav-actions">
-      <a class="nav-phone" href="tel:+18003199756">Call BYLD Equipment</a>
-      <a class="btn btn-red nav-quote" href="#lead">Request Pricing</a>
-      <button class="mobile-menu-btn" type="button" aria-label="Open menu" onclick="document.body.classList.toggle('menu-open')">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions">
+        <a class="nav-phone" href="tel:+18003199756">Call BYLD Equipment</a>
+        <a class="btn btn-red nav-quote" href="#lead">Request Pricing</a>
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="mobile-menu">
-    <a href="#machines" onclick="document.body.classList.remove('menu-open')">Machines</a>
-    <a href="#why" onclick="document.body.classList.remove('menu-open')">Why BYLD</a>
-    <a href="#financing" onclick="document.body.classList.remove('menu-open')">Financing</a>
-    <a href="#lead" onclick="document.body.classList.remove('menu-open')">Request Quote</a>
-    <a class="btn btn-red" href="#lead" onclick="document.body.classList.remove('menu-open')">Request Pricing</a>
-  </div>
-</header>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#machines">Machines</a>
+      <a href="#why-swf">Why SWF</a>
+      <a href="#support">Support</a>
+      <a href="#financing">Financing</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-red" href="#lead">Request Pricing</a>
+    </div>
+  </header>
 
   <main id="top">
-    
-  <section class="hero hero-v2">
-  <div class="wrap hero-grid hero-grid-v2">
-    <div class="hero-copy">
-      <div class="eyebrow">Authorized Sales, Financing &amp; Support</div>
-
-      <h1>Find the right <span>SWF embroidery machine</span> for your shop.</h1>
-
-      <p class="lead">
-        Compare SWF single-head, compact, dual-head, and multi-head embroidery machines with guidance from BYLD Equipment. Get pricing, freight estimates, financing options, and setup support before you buy.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn btn-red" href="#lead">Request SWF Pricing</a>
-        <a class="btn btn-light" href="#machines">Compare Machines</a>
-      </div>
-
-      <div class="hero-proof">
-        <div>
-          <b>Tailored Recommendations</b>
-          <span>Get a quote built around your machine, freight, install, and training needs.</span>
-        </div>
-        <div>
-          <b>Financing Available</b>
-          <span>Explore payment options through BYLD Finance before or after choosing a model.</span>
-        </div>
-        <div>
-          <b>Built for Real Shops</b>
-          <span>From first machines to production expansion, we help match the right setup.</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-machine-card">
-      <div class="hero-watermark">
-        <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/swfnobg_1.png?v=1781197569" alt="SWF logo">
-      </div>
-
-      <div class="hero-machine-top">
-        <span>Featured SWF Machine</span>
-        <strong>KX Series Multi-Head</strong>
-      </div>
-
-      <img class="hero-machine-img" src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX 6 head embroidery machine">
-
-      <div class="hero-machine-bottom">
-        <div>
-          <b>Production Focused</b>
-          <span>For growing embroidery shops</span>
-        </div>
-        <div>
-          <b>Quote Ready</b>
-          <span>Pricing, freight, install, and financing</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-   <section id="machines" class="machine-lineup">
-  <div class="wrap">
-    <div class="section-head lineup-head">
-      <div>
-        <div class="kicker">SWF Machine Lineup</div>
-        <h2>Choose the SWF machine that fits where your shop is headed.</h2>
-      </div>
-      <p>Whether you are buying your first embroidery machine or expanding production, BYLD Equipment can help narrow the options and build a quote around your goals.</p>
-    </div>
-
-    <div class="fit-strip">
-      <div>
-        <span>01</span>
-        <b>Starting embroidery?</b>
-        <p>Look at compact and single-head SWF options.</p>
-      </div>
-      <div>
-        <span>02</span>
-        <b>Growing order volume?</b>
-        <p>Dual-head machines help increase output without overbuying.</p>
-      </div>
-      <div>
-        <span>03</span>
-        <b>Scaling production?</b>
-        <p>Multi-head SWF systems are built for larger runs and team workflows.</p>
-      </div>
-    </div>
-
-    <div class="machine-grid-v2">
-      <article class="machine-card-v2 featured">
-        <div class="machine-media-v2">
-          <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX multi-head embroidery machine">
-        </div>
-        <div class="machine-content-v2">
-          <div class="machine-meta">
-            <span>Production Shops</span>
-            <strong>Multi-Head</strong>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Authorized Sales, Financing &amp; Support</div>
+          <h1>Find the right <span>SWF embroidery machine</span> for your shop.</h1>
+          <p class="lead">Compare SWF single-head, compact, dual-head, and multi-head embroidery machines with guidance from BYLD Equipment. Get pricing, freight estimates, financing options, and setup support before you buy.</p>
+          <div class="hero-actions">
+            <a class="btn btn-red" href="#lead">Request SWF Pricing</a>
+            <a class="btn btn-light" href="#machines">Compare Machines</a>
           </div>
-          <h3>KX &amp; KE Multi-Head Series</h3>
-          <p>Built for embroidery businesses ready to increase output, handle larger orders, and move beyond single-machine production.</p>
-          <div class="machine-points">
-            <div><b>Best for</b><span>Contract embroidery, production shops, growing apparel businesses</span></div>
-            <div><b>Common use</b><span>Team uniforms, corporate apparel, bulk orders, production runs</span></div>
-          </div>
-          <div class="machine-actions-v2">
-            <a class="btn btn-red" href="#lead">Request Pricing</a>
-            <a class="btn btn-light" href="#lead">Help Me Choose</a>
+          <div class="hero-proof">
+            <div><b>Tailored Recommendations</b><span>Get a quote built around your machine, freight, install, and training needs.</span></div>
+            <div><b>Financing Available</b><span>Explore payment options through BYLD Finance before or after choosing a model.</span></div>
+            <div><b>Built for Real Shops</b><span>From first machines to production expansion, we help match the right setup.</span></div>
           </div>
         </div>
-      </article>
 
-      <article class="machine-card-v2">
-        <div class="machine-media-v2">
-          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_single.jpg?v=1759260196" alt="SWF KX single head embroidery machine">
-        </div>
-        <div class="machine-content-v2">
-          <div class="machine-meta">
-            <span>Most Versatile</span>
-            <strong>Single Head</strong>
-          </div>
-          <h3>KX Single Head</h3>
-          <p>A strong choice for custom shops, schools, startups, and businesses adding embroidery for the first time.</p>
-          <div class="machine-points">
-            <div><b>Best for</b><span>Custom apparel, hats, polos, jackets, small batch work</span></div>
-          </div>
-          <div class="machine-actions-v2">
-            <a class="btn btn-red" href="#lead">Request Pricing</a>
-            <a class="btn btn-light" href="#lead">Ask About This Model</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="machine-card-v2">
-        <div class="machine-media-v2">
-          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_T1502D.png?v=1759260378" alt="SWF KX dual head embroidery machine">
-        </div>
-        <div class="machine-content-v2">
-          <div class="machine-meta">
-            <span>Higher Output</span>
-            <strong>Dual Head</strong>
-          </div>
-          <h3>KX Dual Head</h3>
-          <p>For shops that need more production capacity but are not ready to jump into a full multi-head setup.</p>
-          <div class="machine-points">
-            <div><b>Best for</b><span>Growing shops, repeat orders, small team production</span></div>
-          </div>
-          <div class="machine-actions-v2">
-            <a class="btn btn-red" href="#lead">Request Pricing</a>
-            <a class="btn btn-light" href="#lead">Ask About This Model</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="machine-card-v2">
-        <div class="machine-media-v2">
-          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_full_size.jpg?v=1759260197" alt="SWF ES full size embroidery machine">
-        </div>
-        <div class="machine-content-v2">
-          <div class="machine-meta">
-            <span>Starter Friendly</span>
-            <strong>Full Size</strong>
-          </div>
-          <h3>ES Full Size</h3>
-          <p>An approachable SWF option for buyers who want a capable machine with a practical path into embroidery.</p>
-          <div class="machine-points">
-            <div><b>Best for</b><span>First machine buyers, decorators, side businesses</span></div>
-          </div>
-          <div class="machine-actions-v2">
-            <a class="btn btn-red" href="#lead">Request Pricing</a>
-            <a class="btn btn-light" href="#lead">Ask About This Model</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="machine-card-v2">
-        <div class="machine-media-v2">
-          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_compact_ce76207c-a665-4f6f-8335-a67fc84e26c4.jpg?v=1759260197" alt="SWF ES compact embroidery machine">
-        </div>
-        <div class="machine-content-v2">
-          <div class="machine-meta">
-            <span>Small Footprint</span>
-            <strong>Compact</strong>
-          </div>
-          <h3>ES Compact</h3>
-          <p>Designed for shops with limited space that still want a real embroidery machine with SWF capability.</p>
-          <div class="machine-points">
-            <div><b>Best for</b><span>Home-based shops, tight spaces, lower-volume work</span></div>
-          </div>
-          <div class="machine-actions-v2">
-            <a class="btn btn-red" href="#lead">Request Pricing</a>
-            <a class="btn btn-light" href="#lead">Ask About This Model</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="machine-card-v2">
-        <div class="machine-media-v2">
-          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/MAS-12.jpg?v=1759260197" alt="SWF MAS-12 compact embroidery machine">
-        </div>
-        <div class="machine-content-v2">
-          <div class="machine-meta">
-            <span>Compact SWF</span>
-            <strong>12 Needle</strong>
-          </div>
-          <h3>MAS-12</h3>
-          <p>A compact SWF machine for buyers who want embroidery capability without stepping into a larger setup.</p>
-          <div class="machine-points">
-            <div><b>Best for</b><span>Entry-level embroidery, small shops, lower volume production</span></div>
-          </div>
-          <div class="machine-actions-v2">
-            <a class="btn btn-red" href="#lead">Request Pricing</a>
-            <a class="btn btn-light" href="#lead">Ask About This Model</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="why-swf" class="why-swf">
-  <div class="wrap">
-
-    <div class="section-head">
-      <div>
-        <div class="kicker">Why SWF</div>
-        <h2>Why embroiderers choose SWF.</h2>
-      </div>
-      <p>
-        From startup shops to high-volume production facilities, SWF has built a reputation for reliable performance, excellent sew quality, and long-term value.
-      </p>
-    </div>
-
-    <div class="swf-feature-grid">
-
-      <div class="swf-feature-card swf-feature-large">
-        <div class="swf-feature-label">Trusted Worldwide</div>
-        <h3>Built for businesses that depend on embroidery every day.</h3>
-        <p>
-          SWF machines are used by apparel decorators, contract embroidery operations, schools, promotional product companies, and production facilities around the world. Their reputation has been built over decades of real-world use.
-        </p>
-
-        <div class="swf-stats">
-          <div>
-            <strong>Single Head</strong>
-            <span>Startup & custom shops</span>
-          </div>
-
-          <div>
-            <strong>Dual Head</strong>
-            <span>Growing production</span>
-          </div>
-
-          <div>
-            <strong>Multi-Head</strong>
-            <span>Commercial embroidery</span>
+        <div class="hero-machine-card">
+          <div class="hero-watermark"><img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/swfnobg_1.png?v=1781197569" alt="SWF logo"></div>
+          <div class="hero-machine-top"><span>Featured SWF Machine</span><strong>KX Series Multi-Head</strong></div>
+          <img class="hero-machine-img" src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX 6 head embroidery machine">
+          <div class="hero-machine-bottom">
+            <div><b>Production Focused</b><span>For growing embroidery shops</span></div>
+            <div><b>Quote Ready</b><span>Pricing, freight, install, and financing</span></div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="swf-feature-card">
-        <div class="swf-icon">01</div>
-        <h3>Excellent Cap Sewing</h3>
-        <p>
-          SWF machines are known for strong cap performance, making them a popular choice for shops producing structured hats and headwear.
-        </p>
-      </div>
+    <section id="machines" class="machine-lineup">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">SWF Machine Lineup</div><h2>Choose the SWF machine that fits where your shop is headed.</h2></div>
+          <p>Whether you are buying your first embroidery machine or expanding production, BYLD Equipment can help narrow the options and build a quote around your goals.</p>
+        </div>
 
-      <div class="swf-feature-card">
-        <div class="swf-icon">02</div>
-        <h3>Scalable Product Line</h3>
-        <p>
-          Start with a compact or single-head machine and grow into dual-head or multi-head production without changing brands.
-        </p>
-      </div>
+        <div class="fit-strip">
+          <div><span>01</span><b>Starting embroidery?</b><p>Look at compact and single-head SWF options.</p></div>
+          <div><span>02</span><b>Growing order volume?</b><p>Dual-head machines help increase output without overbuying.</p></div>
+          <div><span>03</span><b>Scaling production?</b><p>Multi-head SWF systems are built for larger runs and team workflows.</p></div>
+        </div>
 
-      <div class="swf-feature-card">
-        <div class="swf-icon">03</div>
-        <h3>Built For Production</h3>
-        <p>
-          SWF machines are designed for daily operation and consistent output across a wide range of embroidery applications.
-        </p>
-      </div>
-
-      <div class="swf-feature-card">
-        <div class="swf-icon">04</div>
-        <h3>Strong Value</h3>
-        <p>
-          Many buyers choose SWF because of the balance between performance, reliability, features, and long-term ownership cost.
-        </p>
-      </div>
-
-      <div class="swf-feature-card">
-        <div class="swf-icon">05</div>
-        <h3>Support & Parts Availability</h3>
-        <p>
-          With established support networks and readily available consumables and replacement parts, owners can keep machines running with confidence.
-        </p>
-      </div>
-
-      <div class="swf-feature-card">
-        <div class="swf-icon">06</div>
-        <h3>Proven Technology</h3>
-        <p>
-          SWF has spent decades refining embroidery machine technology used by thousands of shops worldwide.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>    
-
-  <section id="why" class="why-byld">
-  <div class="wrap">
-    <div class="section-head why-head">
-      <div>
-        <div class="kicker">Why BYLD Equipment</div>
-        <h2>Guidance before you buy. Support after your machine arrives.</h2>
-      </div>
-      <p>Buying an embroidery machine is not just about picking a model. It is about choosing the right setup, understanding the full cost, and making sure your shop is ready to produce.</p>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-card why-card-dark">
-        <div class="why-label">A better buying process</div>
-        <h3>Get help choosing the right SWF machine before you commit.</h3>
-        <p>BYLD Equipment helps you compare machine options based on your space, production goals, budget, freight needs, installation plan, and growth path.</p>
-        <a class="btn btn-red" href="#lead">Request SWF Pricing</a>
-      </div>
-
-      <div class="why-card">
-        <span class="why-icon">01</span>
-        <h3>Model Selection</h3>
-        <p>Compare compact, single-head, dual-head, and multi-head SWF machines based on what you actually plan to produce.</p>
-      </div>
-
-      <div class="why-card">
-        <span class="why-icon">02</span>
-        <h3>Freight Planning</h3>
-        <p>Get help factoring in delivery, machine size, access requirements, and the real logistics of getting equipment into your space.</p>
-      </div>
-
-      <div class="why-card">
-        <span class="why-icon">03</span>
-        <h3>Financing Guidance</h3>
-        <p>Explore payment options through BYLD Finance so you can understand affordability before finalizing your machine quote.</p>
-      </div>
-
-      <div class="why-card">
-        <span class="why-icon">04</span>
-        <h3>Install &amp; Training Support</h3>
-        <p>Plan for setup, basic operation, startup training, and the support needed to get your machine producing as quickly as possible.</p>
-      </div>
-
-      <div class="why-card">
-        <span class="why-icon">05</span>
-        <h3>Trade-In Conversations</h3>
-        <p>Already have equipment? Ask about trade-in options or upgrade paths that may help make your next SWF machine easier to justify.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="support" class="support-section">
-  <div class="wrap">
-
-    <div class="section-head">
-      <div>
-        <div class="kicker">Beyond The Machine</div>
-        <h2>Support doesn't end when the machine arrives.</h2>
-      </div>
-      <p>
-        Buying an embroidery machine is only the beginning. BYLD Equipment helps coordinate the details that get your shop producing faster and with fewer surprises.
-      </p>
-    </div>
-
-    <div class="support-layout">
-
-      <div class="support-main">
-
-        <div class="support-card support-card-large">
-          <div class="support-badge">What We Help With</div>
-
-          <h3>Everything needed to get your SWF machine into production.</h3>
-
-          <p>
-            From freight planning to training and financing, our goal is to help you feel confident before your machine arrives and prepared once it does.
-          </p>
-
-          <div class="support-highlight-grid">
-
-            <div>
-              <strong>Freight Coordination</strong>
-              <span>Delivery planning, access requirements, and logistics guidance.</span>
+        <div class="machine-grid">
+          <article class="machine-card featured">
+            <div class="machine-media"><img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX multi-head embroidery machine"></div>
+            <div class="machine-content">
+              <div class="machine-meta"><span>Production Shops</span><strong>Multi-Head</strong></div>
+              <h3>KX &amp; KE Multi-Head Series</h3>
+              <p>Built for embroidery businesses ready to increase output, handle larger orders, and move beyond single-machine production.</p>
+              <div class="machine-points">
+                <div><b>Best for</b><span>Contract embroidery, production shops, growing apparel businesses</span></div>
+                <div><b>Common use</b><span>Team uniforms, corporate apparel, bulk orders, production runs</span></div>
+              </div>
+              <div class="machine-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="#lead">Help Me Choose</a></div>
             </div>
+          </article>
 
-            <div>
-              <strong>Installation Support</strong>
-              <span>Help planning your machine setup and onboarding process.</span>
+          <article class="machine-card">
+            <div class="machine-media"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_single.jpg?v=1759260196" alt="SWF KX single head embroidery machine"></div>
+            <div class="machine-content">
+              <div class="machine-meta"><span>Most Versatile</span><strong>Single Head</strong></div>
+              <h3>KX Single Head</h3>
+              <p>A strong choice for custom shops, schools, startups, and businesses adding embroidery for the first time.</p>
+              <div class="machine-points"><div><b>Best for</b><span>Custom apparel, hats, polos, jackets, small batch work</span></div></div>
+              <div class="machine-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="#lead">Ask About This Model</a></div>
             </div>
+          </article>
 
-            <div>
-              <strong>Operator Training</strong>
-              <span>Learn the fundamentals needed to start producing confidently.</span>
+          <article class="machine-card">
+            <div class="machine-media"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_T1502D.png?v=1759260378" alt="SWF KX dual head embroidery machine"></div>
+            <div class="machine-content">
+              <div class="machine-meta"><span>Higher Output</span><strong>Dual Head</strong></div>
+              <h3>KX Dual Head</h3>
+              <p>For shops that need more production capacity but are not ready to jump into a full multi-head setup.</p>
+              <div class="machine-points"><div><b>Best for</b><span>Growing shops, repeat orders, small team production</span></div></div>
+              <div class="machine-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="#lead">Ask About This Model</a></div>
             </div>
+          </article>
 
-            <div>
-              <strong>Financing Assistance</strong>
-              <span>Understand payment options before finalizing equipment decisions.</span>
+          <article class="machine-card">
+            <div class="machine-media"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_full_size.jpg?v=1759260197" alt="SWF ES full size embroidery machine"></div>
+            <div class="machine-content">
+              <div class="machine-meta"><span>Starter Friendly</span><strong>Full Size</strong></div>
+              <h3>ES Full Size</h3>
+              <p>An approachable SWF option for buyers who want a capable machine with a practical path into embroidery.</p>
+              <div class="machine-points"><div><b>Best for</b><span>First machine buyers, decorators, side businesses</span></div></div>
+              <div class="machine-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="#lead">Ask About This Model</a></div>
             </div>
+          </article>
 
+          <article class="machine-card">
+            <div class="machine-media"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_compact_ce76207c-a665-4f6f-8335-a67fc84e26c4.jpg?v=1759260197" alt="SWF ES compact embroidery machine"></div>
+            <div class="machine-content">
+              <div class="machine-meta"><span>Small Footprint</span><strong>Compact</strong></div>
+              <h3>ES Compact</h3>
+              <p>Designed for shops with limited space that still want a real embroidery machine with SWF capability.</p>
+              <div class="machine-points"><div><b>Best for</b><span>Home-based shops, tight spaces, lower-volume work</span></div></div>
+              <div class="machine-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="#lead">Ask About This Model</a></div>
+            </div>
+          </article>
+
+          <article class="machine-card">
+            <div class="machine-media"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/MAS-12.jpg?v=1759260197" alt="SWF MAS-12 compact embroidery machine"></div>
+            <div class="machine-content">
+              <div class="machine-meta"><span>Compact SWF</span><strong>12 Needle</strong></div>
+              <h3>MAS-12</h3>
+              <p>A compact SWF machine for buyers who want embroidery capability without stepping into a larger setup.</p>
+              <div class="machine-points"><div><b>Best for</b><span>Entry-level embroidery, small shops, lower volume production</span></div></div>
+              <div class="machine-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="#lead">Ask About This Model</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-swf" class="why-swf">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Why SWF</div><h2>Why embroiderers choose SWF.</h2></div>
+          <p>From startup shops to high-volume production facilities, SWF has built a reputation for reliable performance, excellent sew quality, and long-term value.</p>
+        </div>
+        <div class="swf-feature-grid">
+          <div class="swf-feature-card swf-feature-large">
+            <div class="swf-feature-label">Trusted Worldwide</div>
+            <h3>Built for businesses that depend on embroidery every day.</h3>
+            <p>SWF machines are used by apparel decorators, contract embroidery operations, schools, promotional product companies, and production facilities around the world. Their reputation has been built over decades of real-world use.</p>
+            <div class="swf-stats">
+              <div><strong>Single Head</strong><span>Startup &amp; custom shops</span></div>
+              <div><strong>Dual Head</strong><span>Growing production</span></div>
+              <div><strong>Multi-Head</strong><span>Commercial embroidery</span></div>
+            </div>
+          </div>
+          <div class="swf-feature-card"><div class="number-icon">01</div><h3>Excellent Cap Sewing</h3><p>SWF machines are known for strong cap performance, making them a popular choice for shops producing structured hats and headwear.</p></div>
+          <div class="swf-feature-card"><div class="number-icon">02</div><h3>Scalable Product Line</h3><p>Start with a compact or single-head machine and grow into dual-head or multi-head production without changing brands.</p></div>
+          <div class="swf-feature-card"><div class="number-icon">03</div><h3>Built For Production</h3><p>SWF machines are designed for daily operation and consistent output across a wide range of embroidery applications.</p></div>
+          <div class="swf-feature-card"><div class="number-icon">04</div><h3>Strong Value</h3><p>Many buyers choose SWF because of the balance between performance, reliability, features, and long-term ownership cost.</p></div>
+          <div class="swf-feature-card"><div class="number-icon">05</div><h3>Support &amp; Parts Availability</h3><p>With established support networks and readily available consumables and replacement parts, owners can keep machines running with confidence.</p></div>
+          <div class="swf-feature-card"><div class="number-icon">06</div><h3>Proven Technology</h3><p>SWF has spent decades refining embroidery machine technology used by thousands of shops worldwide.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="why-byld">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Why BYLD Equipment</div><h2>Guidance before you buy. Support after your machine arrives.</h2></div>
+          <p>Buying an embroidery machine is not just about picking a model. It is about choosing the right setup, understanding the full cost, and making sure your shop is ready to produce.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card why-card-dark"><div class="why-label">A better buying process</div><h3>Get help choosing the right SWF machine before you commit.</h3><p>BYLD Equipment helps you compare machine options based on your space, production goals, budget, freight needs, installation plan, and growth path.</p><a class="btn btn-red" href="#lead">Request SWF Pricing</a></div>
+          <div class="why-card"><div class="number-icon">01</div><h3>Model Selection</h3><p>Compare compact, single-head, dual-head, and multi-head SWF machines based on what you actually plan to produce.</p></div>
+          <div class="why-card"><div class="number-icon">02</div><h3>Freight Planning</h3><p>Get help factoring in delivery, machine size, access requirements, and the real logistics of getting equipment into your space.</p></div>
+          <div class="why-card"><div class="number-icon">03</div><h3>Financing Guidance</h3><p>Explore payment options through BYLD Finance so you can understand affordability before finalizing your machine quote.</p></div>
+          <div class="why-card"><div class="number-icon">04</div><h3>Install &amp; Training Support</h3><p>Plan for setup, basic operation, startup training, and the support needed to get your machine producing as quickly as possible.</p></div>
+          <div class="why-card"><div class="number-icon">05</div><h3>Trade-In Conversations</h3><p>Already have equipment? Ask about trade-in options or upgrade paths that may help make your next SWF machine easier to justify.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="support-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Beyond The Machine</div><h2>Support does not end when the machine arrives.</h2></div>
+          <p>Buying an embroidery machine is only the beginning. BYLD Equipment helps coordinate the details that get your shop producing faster and with fewer surprises.</p>
+        </div>
+        <div class="support-layout">
+          <div class="support-main">
+            <div class="support-card support-card-large">
+              <div class="support-badge">What We Help With</div>
+              <h3>Everything needed to get your SWF machine into production.</h3>
+              <p>From freight planning to training and financing, our goal is to help you feel confident before your machine arrives and prepared once it does.</p>
+              <div class="support-highlight-grid">
+                <div><strong>Freight Coordination</strong><span>Delivery planning, access requirements, and logistics guidance.</span></div>
+                <div><strong>Installation Support</strong><span>Help planning your machine setup and onboarding process.</span></div>
+                <div><strong>Operator Training</strong><span>Learn the fundamentals needed to start producing confidently.</span></div>
+                <div><strong>Financing Assistance</strong><span>Understand payment options before finalizing equipment decisions.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="support-side">
+            <div class="support-card"><div class="number-icon">01</div><h3>Plan Your Setup</h3><p>Determine the right machine, hoop sizes, workspace requirements, and production goals.</p></div>
+            <div class="support-card"><div class="number-icon">02</div><h3>Prepare For Delivery</h3><p>Coordinate freight, access, unloading, and installation requirements ahead of time.</p></div>
+            <div class="support-card"><div class="number-icon">03</div><h3>Start Producing Faster</h3><p>Get the training and guidance needed to start generating revenue from your machine sooner.</p></div>
           </div>
         </div>
-
       </div>
+    </section>
 
-      <div class="support-side">
-
-        <div class="support-card">
-          <div class="support-number">01</div>
-          <h3>Plan Your Setup</h3>
-          <p>
-            Determine the right machine, hoop sizes, workspace requirements, and production goals.
-          </p>
-        </div>
-
-        <div class="support-card">
-          <div class="support-number">02</div>
-          <h3>Prepare For Delivery</h3>
-          <p>
-            Coordinate freight, access, unloading, and installation requirements ahead of time.
-          </p>
-        </div>
-
-        <div class="support-card">
-          <div class="support-number">03</div>
-          <h3>Start Producing Faster</h3>
-          <p>
-            Get the training and guidance needed to start generating revenue from your machine sooner.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-    
-<section id="financing" class="finance-section">
-  <div class="wrap">
-    <div class="finance-layout">
-
-      <div class="finance-copy">
-        <div class="kicker">BYLD Finance</div>
-        <h2>Flexible financing options for SWF embroidery machines.</h2>
-        <p>
-          Equipment financing can help you move forward with the right SWF machine while preserving cash flow. BYLD Finance gives qualified buyers a simple way to explore payment options before or after requesting a machine quote.
-        </p>
-
-        <div class="finance-actions">
-          <a class="btn btn-green" href="https://byldfinance.com/pages/apply-now" target="_blank" rel="noopener">Get Pre-Approved</a>
-          <a class="btn btn-light" href="#lead">Request Pricing First</a>
-        </div>
-
-        <p class="finance-disclaimer">
-          Financing is subject to credit approval. Terms, structures, and available programs vary by applicant, equipment, and lender approval.
-        </p>
-      </div>
-
-      <div class="finance-card-grid">
-        <div class="finance-card">
-          <span>01</span>
-          <h3>Soft Credit Pull</h3>
-          <p>Start with a simple application designed to help evaluate options without a hard credit pull upfront.</p>
-        </div>
-
-        <div class="finance-card">
-          <span>02</span>
-          <h3>Startup Friendly</h3>
-          <p>Newer businesses may still have options depending on credit profile, equipment, and overall application strength.</p>
-        </div>
-
-        <div class="finance-card">
-          <span>03</span>
-          <h3>Full Project Planning</h3>
-          <p>Ask about including machine, freight, installation, training, and related startup costs in the buying conversation.</p>
-        </div>
-
-        <div class="finance-card finance-card-dark">
-          <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/byld_finance_logo.png?v=1746030247" alt="BYLD Finance logo">
-          <h3>Want estimated payments?</h3>
-          <p>Use the ROI calculator to think through production volume, revenue goals, and payment expectations.</p>
-          <a class="btn btn-light" href="https://byldfinance.com/pages/swf-roi-interactive-calculator" target="_blank" rel="noopener">View ROI Calculator</a>
+    <section id="financing" class="finance-section">
+      <div class="wrap">
+        <div class="finance-layout">
+          <div class="finance-copy">
+            <div class="kicker">BYLD Finance</div>
+            <h2>Flexible financing options for SWF embroidery machines.</h2>
+            <p>Equipment financing can help you move forward with the right SWF machine while preserving cash flow. BYLD Finance gives qualified buyers a simple way to explore payment options before or after requesting a machine quote.</p>
+            <div class="finance-actions"><a class="btn btn-green" href="https://byldfinance.com/pages/apply-now" target="_blank" rel="noopener">Get Pre-Approved</a><a class="btn btn-light" href="#lead">Request Pricing First</a></div>
+            <p class="finance-disclaimer">Financing is subject to credit approval. Terms, structures, and available programs vary by applicant, equipment, and lender approval.</p>
+          </div>
+          <div class="finance-card-grid">
+            <div class="finance-card"><div class="number-icon">01</div><h3>Soft Credit Pull</h3><p>Start with a simple application designed to help evaluate options without a hard credit pull upfront.</p></div>
+            <div class="finance-card"><div class="number-icon">02</div><h3>Startup Friendly</h3><p>Newer businesses may still have options depending on credit profile, equipment, and overall application strength.</p></div>
+            <div class="finance-card"><div class="number-icon">03</div><h3>Full Project Planning</h3><p>Ask about including machine, freight, installation, training, and related startup costs in the buying conversation.</p></div>
+            <div class="finance-card finance-card-dark"><img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/byld_finance_logo.png?v=1746030247" alt="BYLD Finance logo"><h3>Want estimated payments?</h3><p>Use the ROI calculator to think through production volume, revenue goals, and payment expectations.</p><a class="btn btn-light" href="https://byldfinance.com/pages/swf-roi-interactive-calculator" target="_blank" rel="noopener">View ROI Calculator</a></div>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<section id="trade-in" class="trade-section">
-  <div class="wrap">
-
-    <div class="trade-box">
-      <div class="trade-copy">
-        <div class="kicker">Trade-Ins &amp; Upgrades</div>
-        <h2>Already have embroidery equipment?</h2>
-        <p>
-          If you are upgrading from an older embroidery machine, adding production capacity, or replacing equipment that no longer fits your shop, BYLD Equipment can help you talk through your options.
-        </p>
-
-        <div class="trade-actions">
-          <a class="btn btn-red" href="#lead">Ask About Trade-In Options</a>
-          <a class="btn btn-light" href="#machines">Compare SWF Machines</a>
+    <section id="trade-in" class="trade-section">
+      <div class="wrap">
+        <div class="trade-box">
+          <div class="trade-copy"><div class="kicker">Trade-Ins &amp; Upgrades</div><h2>Already have embroidery equipment?</h2><p>If you are upgrading from an older embroidery machine, adding production capacity, or replacing equipment that no longer fits your shop, BYLD Equipment can help you talk through your options.</p><div class="trade-actions"><a class="btn btn-red" href="#lead">Ask About Trade-In Options</a><a class="btn btn-light" href="#machines">Compare SWF Machines</a></div></div>
+          <div class="trade-grid"><div><span>01</span><b>Upgrade older equipment</b><p>Move from an older single-head, compact, or entry-level machine into a better SWF setup.</p></div><div><span>02</span><b>Add more production</b><p>Compare dual-head and multi-head options when your current setup cannot keep up.</p></div><div><span>03</span><b>Build a smarter quote</b><p>Discuss machine interest, freight, financing, training, and possible trade-in value together.</p></div></div>
         </div>
       </div>
+    </section>
 
-      <div class="trade-grid">
-        <div>
-          <span>01</span>
-          <b>Upgrade older equipment</b>
-          <p>Move from an older single-head, compact, or entry-level machine into a better SWF setup.</p>
+    <section id="faq" class="faq-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">SWF Buying Questions</div><h2>Frequently asked questions.</h2></div>
+          <p>Not sure where to start? These are the common questions buyers ask when comparing SWF embroidery machines.</p>
         </div>
-
-        <div>
-          <span>02</span>
-          <b>Add more production</b>
-          <p>Compare dual-head and multi-head options when your current setup cannot keep up.</p>
-        </div>
-
-        <div>
-          <span>03</span>
-          <b>Build a smarter quote</b>
-          <p>Discuss machine interest, freight, financing, training, and possible trade-in value together.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="faq" class="faq-section">
-  <div class="wrap">
-
-    <div class="section-head">
-      <div>
-        <div class="kicker">SWF Buying Questions</div>
-        <h2>Frequently asked questions.</h2>
-      </div>
-      <p>
-        Not sure where to start? These are the common questions buyers ask when comparing SWF embroidery machines.
-      </p>
-    </div>
-
-    <div class="faq-grid">
-
-      <details class="faq-item" open>
-        <summary>How much does an SWF embroidery machine cost?</summary>
-        <p>Pricing depends on the model, machine configuration, freight, installation, training, and any financing needs. Request pricing and BYLD Equipment can help build a quote around your shop.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Which SWF machine is best for a startup?</summary>
-        <p>Many first-time buyers compare compact and single-head SWF options. The right fit depends on your space, budget, products, expected order volume, and growth plans.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Can SWF embroidery machines sew hats?</summary>
-        <p>Yes. SWF machines are commonly used for caps, flats, garments, bags, polos, jackets, and other decorated apparel applications.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>What is the difference between single-head, dual-head, and multi-head machines?</summary>
-        <p>Single-head machines are usually best for custom work and smaller batches. Dual-head machines increase output while staying flexible. Multi-head machines are built for larger production runs and higher-volume shops.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Can I finance an SWF embroidery machine?</summary>
-        <p>Qualified buyers may be able to finance SWF equipment through BYLD Finance. Financing options vary by applicant, credit profile, equipment, and lender approval.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Can freight, installation, and training be included?</summary>
-        <p>Depending on the quote and financing structure, freight, installation, training, and startup needs can be discussed as part of the overall buying plan.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Can I trade in my current embroidery machine?</summary>
-        <p>If you already own embroidery equipment, BYLD Equipment can talk through possible upgrade paths and trade-in considerations.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>How do I know which SWF model to choose?</summary>
-        <p>The easiest next step is to request pricing and tell us what you plan to make, how much volume you expect, and whether you need financing, freight, installation, or training included.</p>
-      </details>
-
-    </div>
-
-  </div>
-</section>    
-
-<section id="lead" class="quote-section">
-  <div class="wrap">
-
-    <div class="quote-shell">
-
-      <div class="quote-copy">
-        <div class="kicker">Request Pricing</div>
-        <h2>Get SWF pricing built around your shop.</h2>
-        <p>
-          Tell us what you are looking for and BYLD Equipment will help with machine recommendations, pricing, freight, financing options, installation, and training.
-        </p>
-
-        <div class="quote-checks">
-          <div>Machine recommendations</div>
-          <div>Freight and delivery planning</div>
-          <div>Financing options</div>
-          <div>Install and training support</div>
-        </div>
-
-        <div class="quote-contact">
-          <a href="tel:+18003199756">1-800-319-9756</a>
-          <a href="mailto:sales@byldequipment.com">sales@byldequipment.com</a>
+        <div class="faq-grid">
+          <details class="faq-item" open><summary>How much does an SWF embroidery machine cost?</summary><p>Pricing depends on the model, machine configuration, freight, installation, training, and any financing needs. Request pricing and BYLD Equipment can help build a quote around your shop.</p></details>
+          <details class="faq-item"><summary>Which SWF machine is best for a startup?</summary><p>Many first-time buyers compare compact and single-head SWF options. The right fit depends on your space, budget, products, expected order volume, and growth plans.</p></details>
+          <details class="faq-item"><summary>Can SWF embroidery machines sew hats?</summary><p>Yes. SWF machines are commonly used for caps, flats, garments, bags, polos, jackets, and other decorated apparel applications.</p></details>
+          <details class="faq-item"><summary>What is the difference between single-head, dual-head, and multi-head machines?</summary><p>Single-head machines are usually best for custom work and smaller batches. Dual-head machines increase output while staying flexible. Multi-head machines are built for larger production runs and higher-volume shops.</p></details>
+          <details class="faq-item"><summary>Can I finance an SWF embroidery machine?</summary><p>Qualified buyers may be able to finance SWF equipment through BYLD Finance. Financing options vary by applicant, credit profile, equipment, and lender approval.</p></details>
+          <details class="faq-item"><summary>Can freight, installation, and training be included?</summary><p>Depending on the quote and financing structure, freight, installation, training, and startup needs can be discussed as part of the overall buying plan.</p></details>
+          <details class="faq-item"><summary>Can I trade in my current embroidery machine?</summary><p>If you already own embroidery equipment, BYLD Equipment can talk through possible upgrade paths and trade-in considerations.</p></details>
+          <details class="faq-item"><summary>How do I know which SWF model to choose?</summary><p>The easiest next step is to request pricing and tell us what you plan to make, how much volume you expect, and whether you need financing, freight, installation, or training included.</p></details>
         </div>
       </div>
+    </section>
 
-      <form class="quote-form" action="https://formsubmit.co/sales@byldequipment.com" method="POST">
+    <section id="lead" class="quote-section">
+      <div class="wrap">
+        <div class="quote-shell">
+          <div class="quote-copy">
+            <div class="kicker">Request Pricing</div>
+            <h2>Get SWF pricing built around your shop.</h2>
+            <p>Tell us what you are looking for and BYLD Equipment will help with machine recommendations, pricing, freight, financing options, installation, and training.</p>
+            <div class="quote-checks"><div>Machine recommendations</div><div>Freight and delivery planning</div><div>Financing options</div><div>Install and training support</div></div>
+            <div class="quote-contact"><a href="tel:+18003199756">1-800-319-9756</a><a href="mailto:sales@byldequipment.com">sales@byldequipment.com</a></div>
+          </div>
 
-        <input type="hidden" name="_subject" value="New SWF Embroidery Machine Pricing Request">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://swf-embroidery.com/#thank-you">
+          <form class="quote-form" action="https://formsubmit.co/sales@byldequipment.com" method="POST">
+            <input type="hidden" name="_subject" value="New SWF Embroidery Machine Pricing Request">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://swf-embroidery.com/#thank-you">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
-        <div class="form-grid">
-          <label>
-            Name*
-            <input type="text" name="Name" required>
-          </label>
-
-          <label>
-            Company
-            <input type="text" name="Company">
-          </label>
-
-          <label>
-            Email*
-            <input type="email" name="Email" required>
-          </label>
-
-          <label>
-            Phone*
-            <input type="tel" name="Phone" required>
-          </label>
-
-          <label>
-            State
-            <input type="text" name="State">
-          </label>
-
-          <label>
-            Machine Interest
-            <select name="Machine Interest">
-              <option value="">Select one</option>
-              <option>KX Single Head</option>
-              <option>KX Dual Head</option>
-              <option>KX / KE Multi-Head</option>
-              <option>ES Full Size</option>
-              <option>ES Compact</option>
-              <option>MAS-12</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-
-          <label>
-            Financing Needed?
-            <select name="Financing Needed">
-              <option value="">Select one</option>
-              <option>Yes, I want payment options</option>
-              <option>No, paying cash</option>
-              <option>Maybe, I want to compare both</option>
-            </select>
-          </label>
-
-          <label>
-            Timeline
-            <select name="Timeline">
-              <option value="">Select one</option>
-              <option>Ready now</option>
-              <option>Within 30 days</option>
-              <option>1-3 months</option>
-              <option>Just researching</option>
-            </select>
-          </label>
-
-          <label class="full">
-            What are you trying to produce?
-            <textarea name="Message" rows="5" placeholder="Tell us about your shop, products, order volume, space, budget, or any questions you have."></textarea>
-          </label>
+            <div class="form-grid">
+              <label>Name*<input type="text" name="Name" autocomplete="name" required></label>
+              <label>Company<input type="text" name="Company" autocomplete="organization"></label>
+              <label>Email*<input type="email" name="Email" autocomplete="email" required></label>
+              <label>Phone*<input type="tel" name="Phone" autocomplete="tel" required></label>
+              <label>State<input type="text" name="State" autocomplete="address-level1"></label>
+              <label>Machine Interest<select name="Machine Interest"><option value="">Select one</option><option>KX Single Head</option><option>KX Dual Head</option><option>KX / KE Multi-Head</option><option>ES Full Size</option><option>ES Compact</option><option>MAS-12</option><option>Not sure yet</option></select></label>
+              <label>Financing Needed?<select name="Financing Needed"><option value="">Select one</option><option>Yes, I want payment options</option><option>No, paying cash</option><option>Maybe, I want to compare both</option></select></label>
+              <label>Timeline<select name="Timeline"><option value="">Select one</option><option>Ready now</option><option>Within 30 days</option><option>1-3 months</option><option>Just researching</option></select></label>
+              <label class="full">What are you trying to produce?<textarea name="Message" rows="5" placeholder="Tell us about your shop, products, order volume, space, budget, or any questions you have."></textarea></label>
+            </div>
+            <button class="btn btn-red form-submit" type="submit">Submit Pricing Request</button>
+            <p class="form-note">By submitting this form, you agree to be contacted by BYLD Equipment about SWF embroidery machines, pricing, financing, and related equipment options.</p>
+          </form>
         </div>
-
-        <button class="btn btn-red form-submit" type="submit">Submit Pricing Request</button>
-
-        <p class="form-note">
-          By submitting this form, you agree to be contacted by BYLD Equipment about SWF embroidery machines, pricing, financing, and related equipment options.
-        </p>
-
-      </form>
-
-    </div>
-
-    <div id="thank-you" class="thank-you-box">
-      <strong>Thank you.</strong>
-      <span>Your request has been submitted. BYLD Equipment will follow up shortly.</span>
-    </div>
-
-  </div>
-</section>
+        <div id="thank-you" class="thank-you-box"><strong>Thank you.</strong><span>Your request has been submitted. BYLD Equipment will follow up shortly.</span></div>
+      </div>
+    </section>
   </main>
+
+  <div class="sticky-mobile-cta">
+    <a class="btn btn-red" href="#lead">Request SWF Pricing</a>
+  </div>
 
   <footer>
     <div class="wrap foot">
-      <div class="brand"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/swfnobg.png?v=1759258611" alt="SWF logo"><span>SWF Embroidery by BYLD Equipment</span></div>
-      <p>© <span id="year"></span> BYLD Equipment. Built for SWF embroidery machine lead generation.</p>
+      <div class="brand"><img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/swfnobg_1.png?v=1781197569" alt="SWF logo"><span>Embroidery Machines</span></div>
+      <p>© <span id="year"></span> BYLD Equipment. SWF embroidery machine pricing, financing, and equipment guidance.</p>
     </div>
   </footer>
 
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"How much does an SWF embroidery machine cost?","acceptedAnswer":{"@type":"Answer","text":"Pricing depends on the model, machine configuration, freight, installation, training, and any financing needs. Request pricing and BYLD Equipment can help build a quote around your shop."}},
+      {"@type":"Question","name":"Which SWF machine is best for a startup?","acceptedAnswer":{"@type":"Answer","text":"Many first-time buyers compare compact and single-head SWF options. The right fit depends on your space, budget, products, expected order volume, and growth plans."}},
+      {"@type":"Question","name":"Can SWF embroidery machines sew hats?","acceptedAnswer":{"@type":"Answer","text":"Yes. SWF machines are commonly used for caps, flats, garments, bags, polos, jackets, and other decorated apparel applications."}},
+      {"@type":"Question","name":"What is the difference between single-head, dual-head, and multi-head machines?","acceptedAnswer":{"@type":"Answer","text":"Single-head machines are usually best for custom work and smaller batches. Dual-head machines increase output while staying flexible. Multi-head machines are built for larger production runs and higher-volume shops."}},
+      {"@type":"Question","name":"Can I finance an SWF embroidery machine?","acceptedAnswer":{"@type":"Answer","text":"Qualified buyers may be able to finance SWF equipment through BYLD Finance. Financing options vary by applicant, credit profile, equipment, and lender approval."}},
+      {"@type":"Question","name":"Can freight, installation, and training be included?","acceptedAnswer":{"@type":"Answer","text":"Depending on the quote and financing structure, freight, installation, training, and startup needs can be discussed as part of the overall buying plan."}},
+      {"@type":"Question","name":"Can I trade in my current embroidery machine?","acceptedAnswer":{"@type":"Answer","text":"If you already own embroidery equipment, BYLD Equipment can talk through possible upgrade paths and trade-in considerations."}},
+      {"@type":"Question","name":"How do I know which SWF model to choose?","acceptedAnswer":{"@type":"Answer","text":"The easiest next step is to request pricing and tell us what you plan to make, how much volume you expect, and whether you need financing, freight, installation, or training included."}}
+    ]
+  }
+  </script>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if(menuToggle && mobileMenu){
+      menuToggle.addEventListener('click', function(){
+        const isOpen = document.body.classList.toggle('menu-open');
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', function(){
+          document.body.classList.remove('menu-open');
+          menuToggle.setAttribute('aria-expanded','false');
+        });
+      });
+    }
   </script>
 </body>
 </html>
