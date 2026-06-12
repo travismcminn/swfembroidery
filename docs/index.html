@@ -1285,6 +1285,173 @@
   .faq-grid{
     grid-template-columns:1fr;
   }
+}  
+
+.quote-section{
+  background:#fff;
+}
+
+.quote-shell{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:26px;
+  align-items:stretch;
+  background:#101828;
+  border-radius:34px;
+  padding:34px;
+  box-shadow:0 24px 70px rgba(16,24,40,.14);
+}
+
+.quote-copy{
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.quote-copy h2{
+  margin-bottom:14px;
+}
+
+.quote-copy p{
+  color:#d0d5dd;
+  margin:0;
+}
+
+.quote-checks{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:24px;
+}
+
+.quote-checks div{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:13px;
+  font-size:13px;
+  font-weight:800;
+}
+
+.quote-checks div:before{
+  content:"✓";
+  color:var(--byld-green);
+  margin-right:7px;
+}
+
+.quote-contact{
+  display:grid;
+  gap:8px;
+  margin-top:24px;
+}
+
+.quote-contact a{
+  color:#fff;
+  font-weight:900;
+}
+
+.quote-form{
+  background:#fff;
+  border-radius:26px;
+  padding:24px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.quote-form label{
+  display:grid;
+  gap:7px;
+  font-size:12px;
+  font-weight:900;
+  color:#344054;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:13px 14px;
+  font:inherit;
+  font-size:14px;
+  color:var(--ink);
+  background:#fff;
+  outline:none;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus{
+  border-color:var(--swf-red);
+  box-shadow:0 0 0 4px rgba(227,27,35,.08);
+}
+
+.quote-form .full{
+  grid-column:1 / -1;
+}
+
+.form-submit{
+  width:100%;
+  margin-top:16px;
+  border:0;
+}
+
+.form-note{
+  margin:12px 0 0;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.45;
+}
+
+.thank-you-box{
+  margin-top:16px;
+  display:none;
+  background:#ecfdf3;
+  border:1px solid #bbf7d0;
+  color:#166534;
+  border-radius:18px;
+  padding:16px;
+}
+
+.thank-you-box:target{
+  display:block;
+}
+
+.thank-you-box strong{
+  display:block;
+  margin-bottom:3px;
+}
+
+.thank-you-box span{
+  font-size:13px;
+}
+
+@media(max-width:960px){
+  .quote-shell{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .quote-shell{
+    padding:24px;
+    border-radius:26px;
+  }
+
+  .form-grid,
+  .quote-checks{
+    grid-template-columns:1fr;
+  }
+
+  .quote-form{
+    padding:20px;
+  }
 }    
     .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
     section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em} .section-head p{margin:0;color:var(--muted);max-width:530px}
@@ -1931,22 +2098,122 @@
   </div>
 </section>    
 
-    <section id="lead">
-      <div class="wrap leadbox">
-        <div>
-          <div class="kicker">Get Quote</div>
-          <h2>Ready to price an SWF machine?</h2>
-          <p>Tell us what you are making, what machine you are considering, and whether you need freight, installation, training, or financing included.</p>
-          <div class="contact-mini">
-            <a href="mailto:travis@stitchitintl.com">travis@stitchitintl.com</a>
-            <a href="https://byldfinance.com/pages/apply-now" target="_blank" rel="noopener">Need financing? Get pre-approved</a>
-          </div>
+<section id="lead" class="quote-section">
+  <div class="wrap">
+
+    <div class="quote-shell">
+
+      <div class="quote-copy">
+        <div class="kicker">Request Pricing</div>
+        <h2>Get SWF pricing built around your shop.</h2>
+        <p>
+          Tell us what you are looking for and BYLD Equipment will help with machine recommendations, pricing, freight, financing options, installation, and training.
+        </p>
+
+        <div class="quote-checks">
+          <div>Machine recommendations</div>
+          <div>Freight and delivery planning</div>
+          <div>Financing options</div>
+          <div>Install and training support</div>
         </div>
-        <div class="form">
-          <script src="https://form.jotform.com/jsform/93356006387158" type="text/javascript"></script>
+
+        <div class="quote-contact">
+          <a href="tel:+18003199756">1-800-319-9756</a>
+          <a href="mailto:sales@byldequipment.com">sales@byldequipment.com</a>
         </div>
       </div>
-    </section>
+
+      <form class="quote-form" action="https://formsubmit.co/sales@byldequipment.com" method="POST">
+
+        <input type="hidden" name="_subject" value="New SWF Embroidery Machine Pricing Request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://swf-embroidery.com/#thank-you">
+
+        <div class="form-grid">
+          <label>
+            Name*
+            <input type="text" name="Name" required>
+          </label>
+
+          <label>
+            Company
+            <input type="text" name="Company">
+          </label>
+
+          <label>
+            Email*
+            <input type="email" name="Email" required>
+          </label>
+
+          <label>
+            Phone*
+            <input type="tel" name="Phone" required>
+          </label>
+
+          <label>
+            State
+            <input type="text" name="State">
+          </label>
+
+          <label>
+            Machine Interest
+            <select name="Machine Interest">
+              <option value="">Select one</option>
+              <option>KX Single Head</option>
+              <option>KX Dual Head</option>
+              <option>KX / KE Multi-Head</option>
+              <option>ES Full Size</option>
+              <option>ES Compact</option>
+              <option>MAS-12</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+
+          <label>
+            Financing Needed?
+            <select name="Financing Needed">
+              <option value="">Select one</option>
+              <option>Yes, I want payment options</option>
+              <option>No, paying cash</option>
+              <option>Maybe, I want to compare both</option>
+            </select>
+          </label>
+
+          <label>
+            Timeline
+            <select name="Timeline">
+              <option value="">Select one</option>
+              <option>Ready now</option>
+              <option>Within 30 days</option>
+              <option>1-3 months</option>
+              <option>Just researching</option>
+            </select>
+          </label>
+
+          <label class="full">
+            What are you trying to produce?
+            <textarea name="Message" rows="5" placeholder="Tell us about your shop, products, order volume, space, budget, or any questions you have."></textarea>
+          </label>
+        </div>
+
+        <button class="btn btn-red form-submit" type="submit">Submit Pricing Request</button>
+
+        <p class="form-note">
+          By submitting this form, you agree to be contacted by BYLD Equipment about SWF embroidery machines, pricing, financing, and related equipment options.
+        </p>
+
+      </form>
+
+    </div>
+
+    <div id="thank-you" class="thank-you-box">
+      <strong>Thank you.</strong>
+      <span>Your request has been submitted. BYLD Equipment will follow up shortly.</span>
+    </div>
+
+  </div>
+</section>
   </main>
 
   <footer>
