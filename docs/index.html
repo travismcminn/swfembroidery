@@ -554,6 +554,136 @@
   font-size:12px;
 }
 
+.why-byld{
+  background:#f8fafc;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.why-head p{
+  max-width:570px;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:1.1fr 1fr 1fr;
+  gap:18px;
+}
+
+.why-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:24px;
+  box-shadow:0 12px 34px rgba(16,24,40,.06);
+}
+
+.why-card-dark{
+  grid-row:span 2;
+  background:#111827;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:24px;
+  min-height:430px;
+  position:relative;
+  overflow:hidden;
+}
+
+.why-card-dark:before{
+  content:"";
+  position:absolute;
+  inset:18px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:22px;
+  pointer-events:none;
+}
+
+.why-card-dark h3,
+.why-card-dark p,
+.why-card-dark .btn,
+.why-label{
+  position:relative;
+  z-index:2;
+}
+
+.why-label{
+  display:inline-flex;
+  align-self:flex-start;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  color:#fff;
+  border-radius:999px;
+  padding:8px 11px;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.why-card h3{
+  margin:0 0 8px;
+  font-size:22px;
+  line-height:1.12;
+  letter-spacing:-.03em;
+}
+
+.why-card-dark h3{
+  font-size:34px;
+}
+
+.why-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.why-card-dark p{
+  color:#d0d5dd;
+}
+
+.why-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:#fff5f5;
+  border:1px solid #fecdd3;
+  color:var(--swf-red);
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:16px;
+}
+
+@media(max-width:960px){
+  .why-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .why-card-dark{
+    grid-column:span 2;
+    grid-row:auto;
+    min-height:auto;
+  }
+}
+
+@media(max-width:640px){
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+  .why-card-dark{
+    grid-column:span 1;
+  }
+
+  .why-card-dark h3{
+    font-size:28px;
+  }
+}    
+
 @media(max-width:960px){
   .fit-strip{
     grid-template-columns:1fr;
@@ -855,30 +985,56 @@
   </div>
 </section>
 
-    <section id="why" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-      <div class="wrap split">
-        <div class="panel dark">
-          <div class="kicker">Why BYLD Equipment</div>
-          <h2>Not just a machine page. A lead engine with real sales follow-up.</h2>
-          <p>This site should feel like an SWF resource, but it should be built to convert visitors into conversations with BYLD Equipment.</p>
-          <ul class="list">
-            <li>Help buyers compare the SWF lineup without overwhelming them.</li>
-            <li>Push every serious visitor toward pricing, freight, demo, or financing.</li>
-            <li>Keep pricing gated so your team controls the sales conversation.</li>
-          </ul>
-        </div>
-        <div class="panel">
-          <div class="kicker">Lead Flow</div>
-          <h2>Simple funnel for swfembroidery.com</h2>
-          <div class="steps">
-            <div class="step"><b>1</b><strong>Buyer lands</strong><p>They search SWF machines and find a focused landing page.</p></div>
-            <div class="step"><b>2</b><strong>Buyer compares</strong><p>They see single-head, dual-head, compact, and multi-head options.</p></div>
-            <div class="step"><b>3</b><strong>Buyer converts</strong><p>They request pricing, freight, demo, or financing help.</p></div>
-          </div>
-        </div>
+  <section id="why" class="why-byld">
+  <div class="wrap">
+    <div class="section-head why-head">
+      <div>
+        <div class="kicker">Why BYLD Equipment</div>
+        <h2>Guidance before you buy. Support after your machine arrives.</h2>
       </div>
-    </section>
+      <p>Buying an embroidery machine is not just about picking a model. It is about choosing the right setup, understanding the full cost, and making sure your shop is ready to produce.</p>
+    </div>
 
+    <div class="why-grid">
+      <div class="why-card why-card-dark">
+        <div class="why-label">A better buying process</div>
+        <h3>Get help choosing the right SWF machine before you commit.</h3>
+        <p>BYLD Equipment helps you compare machine options based on your space, production goals, budget, freight needs, installation plan, and growth path.</p>
+        <a class="btn btn-red" href="#lead">Request SWF Pricing</a>
+      </div>
+
+      <div class="why-card">
+        <span class="why-icon">01</span>
+        <h3>Model Selection</h3>
+        <p>Compare compact, single-head, dual-head, and multi-head SWF machines based on what you actually plan to produce.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="why-icon">02</span>
+        <h3>Freight Planning</h3>
+        <p>Get help factoring in delivery, machine size, access requirements, and the real logistics of getting equipment into your space.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="why-icon">03</span>
+        <h3>Financing Guidance</h3>
+        <p>Explore payment options through BYLD Finance so you can understand affordability before finalizing your machine quote.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="why-icon">04</span>
+        <h3>Install &amp; Training Support</h3>
+        <p>Plan for setup, basic operation, startup training, and the support needed to get your machine producing as quickly as possible.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="why-icon">05</span>
+        <h3>Trade-In Conversations</h3>
+        <p>Already have equipment? Ask about trade-in options or upgrade paths that may help make your next SWF machine easier to justify.</p>
+      </div>
+    </div>
+  </div>
+</section>
     <section id="financing">
       <div class="wrap split">
         <div class="panel">
