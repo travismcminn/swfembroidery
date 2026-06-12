@@ -381,6 +381,218 @@
     width:145px;
   }
 }
+.machine-lineup{
+  background:#fff;
+}
+
+.lineup-head p{
+  max-width:560px;
+}
+
+.fit-strip{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-bottom:24px;
+}
+
+.fit-strip div{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:18px;
+}
+
+.fit-strip span{
+  display:block;
+  color:var(--swf-red);
+  font-weight:900;
+  font-size:12px;
+  letter-spacing:.08em;
+  margin-bottom:8px;
+}
+
+.fit-strip b{
+  display:block;
+  font-size:16px;
+  margin-bottom:4px;
+}
+
+.fit-strip p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.machine-grid-v2{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.machine-card-v2{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:0 12px 34px rgba(16,24,40,.07);
+  display:flex;
+  flex-direction:column;
+}
+
+.machine-card-v2.featured{
+  grid-column:span 3;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+}
+
+.machine-media-v2{
+  min-height:245px;
+  background:#f8fafc;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+}
+
+.machine-card-v2.featured .machine-media-v2{
+  min-height:390px;
+  border-bottom:0;
+  border-right:1px solid var(--line);
+}
+
+.machine-media-v2 img{
+  max-height:100%;
+  object-fit:contain;
+}
+
+.machine-content-v2{
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  flex:1;
+}
+
+.machine-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  align-items:center;
+}
+
+.machine-meta span{
+  display:inline-flex;
+  background:#fff5f5;
+  color:#b91c1c;
+  border:1px solid #fecdd3;
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:11px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+
+.machine-meta strong{
+  color:#475467;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+.machine-card-v2 h3{
+  margin:0;
+  font-size:24px;
+  letter-spacing:-.03em;
+  color:var(--swf-dark);
+}
+
+.machine-card-v2 p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.machine-points{
+  display:grid;
+  gap:10px;
+}
+
+.machine-points div{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:13px;
+}
+
+.machine-points b{
+  display:block;
+  font-size:12px;
+  margin-bottom:4px;
+  color:var(--ink);
+}
+
+.machine-points span{
+  display:block;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.machine-actions-v2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:auto;
+}
+
+.machine-actions-v2 .btn{
+  padding:12px 14px;
+  font-size:12px;
+}
+
+@media(max-width:960px){
+  .fit-strip{
+    grid-template-columns:1fr;
+  }
+
+  .machine-grid-v2{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .machine-card-v2.featured{
+    grid-column:span 2;
+    grid-template-columns:1fr;
+  }
+
+  .machine-card-v2.featured .machine-media-v2{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    min-height:300px;
+  }
+}
+
+@media(max-width:640px){
+  .machine-grid-v2{
+    grid-template-columns:1fr;
+  }
+
+  .machine-card-v2.featured{
+    grid-column:span 1;
+  }
+
+  .machine-actions-v2{
+    grid-template-columns:1fr;
+  }
+
+  .machine-meta{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+}    
     .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
     section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em} .section-head p{margin:0;color:var(--muted);max-width:530px}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 28px rgba(16,24,40,.06);display:flex;flex-direction:column}.pic{height:230px;background:#fff;display:flex;align-items:center;justify-content:center;padding:18px;border-bottom:1px solid var(--line)}.pic img{max-height:100%;object-fit:contain}.card-body{padding:20px;display:flex;flex-direction:column;gap:13px;flex:1}.tag{align-self:flex-start;background:#fff5f5;color:#b91c1c;border:1px solid #fecdd3;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.card h3{font-size:22px;margin:0;letter-spacing:-.02em}.card p{margin:0;color:var(--muted);font-size:14px}.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.spec{background:var(--soft);border-radius:12px;padding:10px;font-size:12px}.spec b{display:block;font-size:14px;color:var(--ink)}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:auto}.card-actions .btn{padding:11px 12px;font-size:12px}
@@ -484,40 +696,164 @@
   </div>
 </section>
 
-    <section id="machines">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="kicker">SWF Lineup</div><h2>Machines for startups, growing shops, and production teams.</h2></div>
-          <p>Use this page to collect leads first. Pricing can stay behind the quote request so customers reach out before comparison shopping.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <div class="pic"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_single.jpg?v=1759260196" alt="SWF KX single head embroidery machine"></div>
-            <div class="card-body"><span class="tag">Single Head</span><h3>KX Single Head</h3><p>A strong fit for custom apparel shops, decorators, schools, startups, and businesses adding embroidery for the first time.</p><div class="specs"><div class="spec"><b>15 needles</b>Color capacity</div><div class="spec"><b>Compact</b>Shop friendly footprint</div></div><div class="card-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="https://form.jotform.com/260636305618154" target="_blank" rel="noopener">Live Demo</a></div></div>
-          </article>
-          <article class="card">
-            <div class="pic"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_T1502D.png?v=1759260378" alt="SWF KX dual head embroidery machine"></div>
-            <div class="card-body"><span class="tag">Dual Head</span><h3>KX Dual Head</h3><p>Two-head production power with the ability to run jobs more efficiently than a single-head setup.</p><div class="specs"><div class="spec"><b>2 heads</b>More output</div><div class="spec"><b>Flexible</b>Caps, flats, garments</div></div><div class="card-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="https://form.jotform.com/260635331558054" target="_blank" rel="noopener">Freight Quote</a></div></div>
-          </article>
-          <article class="card">
-            <div class="pic"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/Ke_Series.jpg?v=1759259733" alt="SWF KE multi-head embroidery machine"></div>
-            <div class="card-body"><span class="tag">Multi-Head</span><h3>KE Series</h3><p>Production-focused multi-head embroidery machines for shops ready to scale output and handle larger order volume.</p><div class="specs"><div class="spec"><b>4, 6, 8 heads</b>Scalable lineup</div><div class="spec"><b>1,000 SPM</b>Production speed</div></div><div class="card-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="https://form.jotform.com/260636305618154" target="_blank" rel="noopener">Live Demo</a></div></div>
-          </article>
-          <article class="card">
-            <div class="pic"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_full_size.jpg?v=1759260197" alt="SWF ES full size embroidery machine"></div>
-            <div class="card-body"><span class="tag">Starter Friendly</span><h3>ES Full Size</h3><p>A practical option for shops that want SWF capability in a more approachable setup.</p><div class="specs"><div class="spec"><b>15 needles</b>Pro features</div><div class="spec"><b>Garments</b>Caps and flats</div></div><div class="card-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="https://form.jotform.com/260635331558054" target="_blank" rel="noopener">Freight Quote</a></div></div>
-          </article>
-          <article class="card">
-            <div class="pic"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_compact_ce76207c-a665-4f6f-8335-a67fc84e26c4.jpg?v=1759260197" alt="SWF ES compact embroidery machine"></div>
-            <div class="card-body"><span class="tag">Compact</span><h3>ES Compact</h3><p>Built for limited spaces, side businesses, and lower-volume shops that still want a real embroidery machine.</p><div class="specs"><div class="spec"><b>Small footprint</b>Easy placement</div><div class="spec"><b>SWF platform</b>Reliable controls</div></div><div class="card-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="https://form.jotform.com/260636305618154" target="_blank" rel="noopener">Live Demo</a></div></div>
-          </article>
-          <article class="card">
-            <div class="pic"><img src="https://cdn.shopify.com/s/files/1/1236/6284/files/MAS-12.jpg?v=1759260197" alt="SWF MAS-12 compact embroidery machine"></div>
-            <div class="card-body"><span class="tag">Compact SWF</span><h3>MAS-12</h3><p>A compact SWF option for customers who need embroidery capability without jumping straight to a large machine.</p><div class="specs"><div class="spec"><b>12 needles</b>Flexible color setup</div><div class="spec"><b>Accessible</b>Great first machine</div></div><div class="card-actions"><a class="btn btn-red" href="#lead">Request Pricing</a><a class="btn btn-light" href="https://form.jotform.com/260635331558054" target="_blank" rel="noopener">Freight Quote</a></div></div>
-          </article>
-        </div>
+   <section id="machines" class="machine-lineup">
+  <div class="wrap">
+    <div class="section-head lineup-head">
+      <div>
+        <div class="kicker">SWF Machine Lineup</div>
+        <h2>Choose the SWF machine that fits where your shop is headed.</h2>
       </div>
-    </section>
+      <p>Whether you are buying your first embroidery machine or expanding production, BYLD Equipment can help narrow the options and build a quote around your goals.</p>
+    </div>
+
+    <div class="fit-strip">
+      <div>
+        <span>01</span>
+        <b>Starting embroidery?</b>
+        <p>Look at compact and single-head SWF options.</p>
+      </div>
+      <div>
+        <span>02</span>
+        <b>Growing order volume?</b>
+        <p>Dual-head machines help increase output without overbuying.</p>
+      </div>
+      <div>
+        <span>03</span>
+        <b>Scaling production?</b>
+        <p>Multi-head SWF systems are built for larger runs and team workflows.</p>
+      </div>
+    </div>
+
+    <div class="machine-grid-v2">
+      <article class="machine-card-v2 featured">
+        <div class="machine-media-v2">
+          <img src="https://cdn.shopify.com/s/files/1/0878/0608/3384/files/KX_6_head.png?v=1759270180" alt="SWF KX multi-head embroidery machine">
+        </div>
+        <div class="machine-content-v2">
+          <div class="machine-meta">
+            <span>Production Shops</span>
+            <strong>Multi-Head</strong>
+          </div>
+          <h3>KX &amp; KE Multi-Head Series</h3>
+          <p>Built for embroidery businesses ready to increase output, handle larger orders, and move beyond single-machine production.</p>
+          <div class="machine-points">
+            <div><b>Best for</b><span>Contract embroidery, production shops, growing apparel businesses</span></div>
+            <div><b>Common use</b><span>Team uniforms, corporate apparel, bulk orders, production runs</span></div>
+          </div>
+          <div class="machine-actions-v2">
+            <a class="btn btn-red" href="#lead">Request Pricing</a>
+            <a class="btn btn-light" href="#lead">Help Me Choose</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="machine-card-v2">
+        <div class="machine-media-v2">
+          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_single.jpg?v=1759260196" alt="SWF KX single head embroidery machine">
+        </div>
+        <div class="machine-content-v2">
+          <div class="machine-meta">
+            <span>Most Versatile</span>
+            <strong>Single Head</strong>
+          </div>
+          <h3>KX Single Head</h3>
+          <p>A strong choice for custom shops, schools, startups, and businesses adding embroidery for the first time.</p>
+          <div class="machine-points">
+            <div><b>Best for</b><span>Custom apparel, hats, polos, jackets, small batch work</span></div>
+          </div>
+          <div class="machine-actions-v2">
+            <a class="btn btn-red" href="#lead">Request Pricing</a>
+            <a class="btn btn-light" href="#lead">Ask About This Model</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="machine-card-v2">
+        <div class="machine-media-v2">
+          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/KX_T1502D.png?v=1759260378" alt="SWF KX dual head embroidery machine">
+        </div>
+        <div class="machine-content-v2">
+          <div class="machine-meta">
+            <span>Higher Output</span>
+            <strong>Dual Head</strong>
+          </div>
+          <h3>KX Dual Head</h3>
+          <p>For shops that need more production capacity but are not ready to jump into a full multi-head setup.</p>
+          <div class="machine-points">
+            <div><b>Best for</b><span>Growing shops, repeat orders, small team production</span></div>
+          </div>
+          <div class="machine-actions-v2">
+            <a class="btn btn-red" href="#lead">Request Pricing</a>
+            <a class="btn btn-light" href="#lead">Ask About This Model</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="machine-card-v2">
+        <div class="machine-media-v2">
+          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_full_size.jpg?v=1759260197" alt="SWF ES full size embroidery machine">
+        </div>
+        <div class="machine-content-v2">
+          <div class="machine-meta">
+            <span>Starter Friendly</span>
+            <strong>Full Size</strong>
+          </div>
+          <h3>ES Full Size</h3>
+          <p>An approachable SWF option for buyers who want a capable machine with a practical path into embroidery.</p>
+          <div class="machine-points">
+            <div><b>Best for</b><span>First machine buyers, decorators, side businesses</span></div>
+          </div>
+          <div class="machine-actions-v2">
+            <a class="btn btn-red" href="#lead">Request Pricing</a>
+            <a class="btn btn-light" href="#lead">Ask About This Model</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="machine-card-v2">
+        <div class="machine-media-v2">
+          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/es_compact_ce76207c-a665-4f6f-8335-a67fc84e26c4.jpg?v=1759260197" alt="SWF ES compact embroidery machine">
+        </div>
+        <div class="machine-content-v2">
+          <div class="machine-meta">
+            <span>Small Footprint</span>
+            <strong>Compact</strong>
+          </div>
+          <h3>ES Compact</h3>
+          <p>Designed for shops with limited space that still want a real embroidery machine with SWF capability.</p>
+          <div class="machine-points">
+            <div><b>Best for</b><span>Home-based shops, tight spaces, lower-volume work</span></div>
+          </div>
+          <div class="machine-actions-v2">
+            <a class="btn btn-red" href="#lead">Request Pricing</a>
+            <a class="btn btn-light" href="#lead">Ask About This Model</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="machine-card-v2">
+        <div class="machine-media-v2">
+          <img src="https://cdn.shopify.com/s/files/1/1236/6284/files/MAS-12.jpg?v=1759260197" alt="SWF MAS-12 compact embroidery machine">
+        </div>
+        <div class="machine-content-v2">
+          <div class="machine-meta">
+            <span>Compact SWF</span>
+            <strong>12 Needle</strong>
+          </div>
+          <h3>MAS-12</h3>
+          <p>A compact SWF machine for buyers who want embroidery capability without stepping into a larger setup.</p>
+          <div class="machine-points">
+            <div><b>Best for</b><span>Entry-level embroidery, small shops, lower volume production</span></div>
+          </div>
+          <div class="machine-actions-v2">
+            <a class="btn btn-red" href="#lead">Request Pricing</a>
+            <a class="btn btn-light" href="#lead">Ask About This Model</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
     <section id="why" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
       <div class="wrap split">
