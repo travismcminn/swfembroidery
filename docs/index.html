@@ -1130,6 +1130,102 @@
   .finance-copy{
     padding:24px;
   }
+}  
+
+.trade-section{
+  background:#fff;
+}
+
+.trade-box{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:24px;
+  align-items:center;
+  background:#101828;
+  color:#fff;
+  border-radius:34px;
+  padding:34px;
+  box-shadow:0 20px 60px rgba(16,24,40,.12);
+  position:relative;
+  overflow:hidden;
+}
+
+.trade-box:before{
+  content:"";
+  position:absolute;
+  inset:20px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:26px;
+  pointer-events:none;
+}
+
+.trade-copy,
+.trade-grid{
+  position:relative;
+  z-index:2;
+}
+
+.trade-copy h2{
+  margin-bottom:14px;
+}
+
+.trade-copy p{
+  color:#d0d5dd;
+  margin:0;
+}
+
+.trade-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:24px;
+}
+
+.trade-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+}
+
+.trade-grid div{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:20px;
+  padding:18px;
+}
+
+.trade-grid span{
+  display:block;
+  color:#fff;
+  opacity:.7;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.08em;
+  margin-bottom:8px;
+}
+
+.trade-grid b{
+  display:block;
+  margin-bottom:5px;
+}
+
+.trade-grid p{
+  margin:0;
+  color:#d0d5dd;
+  font-size:13px;
+}
+
+@media(max-width:960px){
+  .trade-box{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .trade-box{
+    padding:24px;
+    border-radius:26px;
+  }
 }    
     .machine-stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.machine-stage:before{content:"SWF";position:absolute;right:18px;top:10px;font-size:76px;font-weight:900;color:rgba(227,27,35,.055);line-height:1}.machine-stage img{position:relative;z-index:2;margin:auto;max-height:430px;object-fit:contain}
     section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.kicker{color:var(--swf-red);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}h2{font-size:clamp(30px,3.5vw,46px);line-height:1.05;margin:0;letter-spacing:-.04em} .section-head p{margin:0;color:var(--muted);max-width:530px}
@@ -1674,6 +1770,47 @@
     </div>
   </div>
 </section>
+
+<section id="trade-in" class="trade-section">
+  <div class="wrap">
+
+    <div class="trade-box">
+      <div class="trade-copy">
+        <div class="kicker">Trade-Ins &amp; Upgrades</div>
+        <h2>Already have embroidery equipment?</h2>
+        <p>
+          If you are upgrading from an older embroidery machine, adding production capacity, or replacing equipment that no longer fits your shop, BYLD Equipment can help you talk through your options.
+        </p>
+
+        <div class="trade-actions">
+          <a class="btn btn-red" href="#lead">Ask About Trade-In Options</a>
+          <a class="btn btn-light" href="#machines">Compare SWF Machines</a>
+        </div>
+      </div>
+
+      <div class="trade-grid">
+        <div>
+          <span>01</span>
+          <b>Upgrade older equipment</b>
+          <p>Move from an older single-head, compact, or entry-level machine into a better SWF setup.</p>
+        </div>
+
+        <div>
+          <span>02</span>
+          <b>Add more production</b>
+          <p>Compare dual-head and multi-head options when your current setup cannot keep up.</p>
+        </div>
+
+        <div>
+          <span>03</span>
+          <b>Build a smarter quote</b>
+          <p>Discuss machine interest, freight, financing, training, and possible trade-in value together.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>    
 
     <section id="lead">
       <div class="wrap leadbox">
